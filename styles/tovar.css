@@ -1,0 +1,18 @@
+.tovar-title {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.tovar-box {
+  display: flex;
+}
+
+.tovar-img {
+  width: 500px;
+  border: 1px solid;
+  margin-right: 50px;
+}
+
+.tovar-description {
+  font-size: 17px;
+}
