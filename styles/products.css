@@ -1,0 +1,29 @@
+
+.products-title {
+  text-align: center;
+  font-weight: 200;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.product {
+  width: 30%;
+  margin: 20px;
+  height: 200px;
+  border: 1px solid;
+}
+
+.product__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}

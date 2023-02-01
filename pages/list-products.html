@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
-  <title>Главная</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/products.css">
+  <title>Product list</title>
 </head>
 <body>
-<!--  <a class="catalog-list__link" href="">test</a> -->
   <section class="catalog">
     <div class="close">
       <span></span>
@@ -25,9 +25,7 @@
             </div>
 
             <ul class="catalog-sublist sublist-end">
-              <li class="catalog-list__item">
-                <a class="catalog-list__link" href="pages/list-products.html">Детская</a>
-              </li>
+              <a class="catalog-list__link" href="pages/list-products.html">Детская</a>
               <li class="catalog-list__item">Взрослая</li>
             </ul>
           </li>
@@ -99,7 +97,7 @@
                 <div>Ортезы</div>
                 <div class="catalog-list__button"></div>
               </div>
-
+              
               <ul class="catalog-sublist sublist-end">
                 <li class="catalog-list__item">Коленные</li>
                 <li class="catalog-list__item">Голеностопные</li>
@@ -128,7 +126,7 @@
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Главная</a>
+            <a class="nav-list__link" href="../index.html">Главная</a>
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href="#" data-catalog>Каталог</a>
@@ -153,7 +151,7 @@
   <section class="section-title">
     <div class="container section-title__container">
       <div class="logo">
-        <img src="images/logo-big.svg" alt="logo" class="logo__img">
+        <img src="../images/logo-big.svg" alt="logo" class="logo__img">
       </div>
       
       <p class="label__text">Technologies Rehabilitation</p>
@@ -164,30 +162,40 @@
     </div>
   </section>
 
-  <section class="collecting-contacts">
-    <div class="container collecting-contacts__container">
-      <h1 class="collecting-contacts__title">
-        Обеспечим техническими средствами реабилитации по электронным сертификатам
-      </h1>
+  <main class="main">
+    <div class="container">
 
-      <h2 class="collecting-contacts__form-title">Узнать стоимость</h2>
+      <h1 class="products-title">Название категории</h1>
 
-      <form class="collecting-contacts__form">
-        <input class="collecting-contacts__input" type="text" placeholder="Ваше имя">
-        <input class="collecting-contacts__input" type="text" placeholder="Ваш телефон">
-        <input class="collecting-contacts__input" type="text" placeholder="Ваш email">
-
-        <button class="collecting-contacts__submit">оставить заявку</button>
-      </form>
+      <div class="products">
+        <div class="product">
+          <a class="product__link" href="product.html">товар 1</a>
+        </div>
+        <div class="product">
+          <a class="product__link" href="product.html">товар 1</a>
+        </div>
+        <div class="product">
+          <a class="product__link" href="product.html">товар 1</a>
+        </div>
+        <div class="product">
+          <a class="product__link" href="product.html">товар 1</a>
+        </div>
+        <div class="product">
+          <a class="product__link" href="product.html">товар 1</a>
+        </div>
+        <div class="product">
+          <a class="product__link" href="product.html">товар 1</a>
+        </div>
+      </div>
     </div>
-  </section>
+  </main>
 
   <footer class="footer">
     <div class="container footer__container">
       <div class="logo">
-        <img src="images/logo-big.svg" alt="logo" class="logo__img">
+        <img src="../images/logo-big.svg" alt="logo" class="logo__img">
       </div>
-        
+      
 
       <div class="footer-adress">
         <p class="footer-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
@@ -203,6 +211,7 @@
     </div>
   </footer>
 
-  <script src="scripts/menu.js"></script>
+  <script src="../scripts/menu.js"></script>
+
 </body>
 </html>

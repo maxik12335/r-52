@@ -84,7 +84,11 @@ html, body {
   left: 0;
   top: 0;
   display: flex;
-  /* display: none; */
+  display: none;
+}
+
+.catalog-show {
+  display: flex;
 }
 
 .catalog__shadow {
@@ -92,6 +96,40 @@ html, body {
   width: 100%;
   min-height: 100%;
   background-color: gray;
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 450px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.close:hover span {
+  -webkit-box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close span {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+}
+
+.close span:first-child {
+  transform: rotate(45deg);
+}
+
+.close span:last-child {
+  transform: rotate(-45deg);
 }
 
 .catalog-list {
@@ -136,7 +174,7 @@ html, body {
 }
 
 .catalog-sublist {
-  width: 100%;
+  width: fit-content;
   padding: 20px 10px 10px 10px;
 }
 
@@ -145,25 +183,31 @@ html, body {
   width: 320px;
 }
 
-.catalog-sublist .catalog-list__item::before {
-  content: "";
+.catalog-box-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog-list__button {
   display: block;
   width: 30px;
   height: 30px;
   background-image: url(../images/arrow-down-new-3.png);
   background-size: cover;
-  position: absolute;
-  right: 0px;
-  top: 0;
 }
 
 .sublist-end {
   display: none;
 }
 
+.sublist-end-show {
+  display: block;
+}
+
 /* убрать галочку с последнего уровня вложенности меню */
 .sublist-end .catalog-list__item::before {
-  display: none;
+  /* display: none; */
 }
 
 .catalog-list__link {
