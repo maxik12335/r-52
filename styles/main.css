@@ -21,6 +21,20 @@ html, body {
   font-family: 'Roboto';
 }
 
+.body::-webkit-scrollbar {
+  width: 5px;               /* ширина всей полосы прокрутки */
+}
+
+.body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);        /* цвет зоны отслеживания */
+}
+
+.body::-webkit-scrollbar-thumb {
+  background-color: gray;    /* цвет бегунка */
+  border-radius: 5px;       /* округлось бегунка */
+  border: none;  /* отступ вокруг бегунка */
+}
+
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -50,6 +64,7 @@ html, body {
   text-transform: uppercase;
   font-weight: 300;
   height: fit-content;
+  position: relative;
 }
 
 .nav-list__link {
@@ -58,6 +73,101 @@ html, body {
 
 .nav-list__link:hover {
   border-bottom: 1px solid;
+}
+
+/* catalog */
+
+.catalog {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  /* display: none; */
+}
+
+.catalog__shadow {
+  flex-grow: 1;
+  width: 100%;
+  min-height: 100%;
+  background-color: gray;
+}
+
+.catalog-list {
+  min-width: fit-content;
+  max-height: 100%;
+  padding: 30px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.catalog-list::-webkit-scrollbar {
+  width: 5px;               /* ширина всей полосы прокрутки */
+}
+
+.catalog-list::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);        /* цвет зоны отслеживания */
+}
+
+.catalog-list::-webkit-scrollbar-thumb {
+  background-color: gray;    /* цвет бегунка */
+  border-radius: 5px;       /* округлось бегунка */
+  border: none;  /* отступ вокруг бегунка */
+}
+
+.catalog-list__title {
+
+}
+
+.catalog-list__item {
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.catalog-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-sublist {
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+}
+
+.catalog-sublist .catalog-list__item {
+  position: relative;
+  width: 320px;
+}
+
+.catalog-sublist .catalog-list__item::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/arrow-down-new-3.png);
+  background-size: cover;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.sublist-end {
+  display: none;
+}
+
+/* убрать галочку с последнего уровня вложенности меню */
+.sublist-end .catalog-list__item::before {
+  display: none;
+}
+
+.catalog-list__link {
+
 }
 
 /* section-title */
