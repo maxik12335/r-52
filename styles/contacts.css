@@ -1,0 +1,40 @@
+.contacts-title {
+  text-align: center;
+  margin: 50px 0;
+  font-weight: 200;
+  font-size: 50px;
+}
+
+.contacts-box {
+  display: flex;
+  
+}
+
+.map {
+  width: 500px;
+  height: 400px;
+  margin-right: 100px;
+}
+
+.contacts-description__box {
+  padding: 50px;
+}
+
+.contacts-description__box:first-child {
+  margin-bottom: 50px;
+}
+
+.contacts-description__text {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.contacts-description__link {
+  color: blue;
+}
+
+.contacts-description__link:hover {
+  color: red;
+  /* color: rgb(8, 8, 154); */
+}
