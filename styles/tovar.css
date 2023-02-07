@@ -183,9 +183,9 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 .dop-tovar-description__list-item {
-  width: 29%;
+  width: 20%;
   height: 360px;
-  margin: 25px;
+  margin: 30px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -209,7 +209,8 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
 
 .dop-tovar-description__img {
   display: block;
-  height: 100%;
+  width: 100%;
+  height: 200px;
   margin: 0 auto;
 }
 
@@ -231,18 +232,30 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 0px 8px 8px rgb(0 0 0 / 20%);
   -moz-box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 8px 8px rgb(0 0 0 / 20%);
+  display: flex;
+  flex-direction: column;
+}
+
+.other__item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 50px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 50px 0;
 }
 
 .other-title {
-  margin-bottom: 100px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  margin-right: 100px;
+  text-align: left;
 }
 
 .othet-img-box {
-  margin-bottom: 100px;
-  height: 398px;
+  height: 200px;
 }
 
 .other-img {
