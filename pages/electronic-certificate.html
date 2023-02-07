@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/contacts.css">
+  <link rel="stylesheet" href="../styles/electronic-certificate.css">
   <title>Product list</title>
 </head>
 <body>
@@ -156,10 +156,10 @@
             <a class="nav-list__link" href="#">Компенсация</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="./electronic-certificate.html">Электронные сертификаты</a>
+            <a class="nav-list__link" href="#">Электронные сертификаты</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Контакты</a>
+            <a class="nav-list__link" href="./contacts.html">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -168,25 +168,100 @@
 
   <main class="main">
     <div class="container">
-      <h1 class="contacts-title">Контакты</h1>
-      <div class="contacts-box">
-        <iframe 
-          class="map"  
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa93f3bc57cec1bc4692e9e213e4eff8ff492f9977918a50b9018fa9e38f514c3&amp;source=constructor"
-          frameborder="0"
-        ></iframe>
+      <h1 class="main-title">Электронные Сертификаты</h1>
 
-        <div class="contacts-description">
-          <div class="contacts-description__box">
-            <p class="contacts-description__text">г. Нижний Новгород пос. Черепичный, 14А</p>
-            <p class="contacts-description__text">г. Нижний Новгород Родионова, 165 корп. 13</p>
+      <section class="electronic-certificate-about">
+        <p class="electronic-certificate-about__title">
+          <span class="fw-500">Электронный сертификат (ЭС)</span> – это новый платежный инструмент, который позволяет получать государственную поддержку на средства реабилитации. С помощью сертификата можно приобрести ТСР в специализированных точках продаж и интернет-магазинах. Теперь такая возможность появилась и у наших покупателей.
+        </p>
+        <img class="electronic-certificate-about__img" src="../images/electronic-certificate.svg" alt="">
+      </section>
+
+      <section class="electronic-certificate-description">
+        <ul class="electronic-certificate-description__list">
+          <li class="electronic-certificate-description__list-item">
+            Вы можете использовать электронный сертификат Фонда социального страхования (ФСС) для покупки технических средств реабилитации на Supportshop.ru. Для этого вам потребуется сам сертификат, прикреплённый к банковской карте «Мир».
+          </li>
+          <li class="electronic-certificate-description__list-item">
+            Ниже описан процесс оплаты электронным сертификатом удобным для Вас способом (в офисе или онлайн).
+          </li>
+          <li class="electronic-certificate-description__list-item">
+            Если у вас остались вопросы, звоните нам по номеру телефона
+            <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+            (звонок по РФ бесплатны), наши специалисты подробно проконсультируют Вас!
+          </li>
+        </ul>
+      </section>
+
+      <section class="electronic-certificate-pay">
+        <h2 class="electronic-certificate-pay__title">
+          Как оплатить покупку электронным сертификатом ФСС?
+        </h2>
+
+        <section class="electronic-certificate-pay__office">
+          <h3 class="electronic-certificate-pay__office-title">В офисе</h3>
+          <p class="electronic-certificate-pay__office-description">
+            Вы просто прикладывайте банковскую карту «Мир», к которой привязан электронный сертификат, к платежному терминалу, списание средств с ЭС происходит автоматически.
+            Если на вашем сертификате меньше денег, чем нужно для оплаты товара, недостающая сумма спишется с карты «Мир», Вам придет уведомление для подтверждения списания денежных средств.
+          </p>
+        </section>
+
+        <section class="electronic-certificate-pay__online">
+          <h3 class="electronic-certificate-pay__online-title">Удаленно</h3>
+
+          <div class="electronic-certificate-pay__online-item">
+            <h4 class="electronic-certificate-pay__online-item-title">Выставленный счёт</h4>
+            <div class="electronic-certificate-pay__online-item-box">
+              <img class="electronic-certificate-pay__online-item-img w-400" src="../images/invoice-issued.png" alt="invoice issued">
+              <p class="electronic-certificate-pay__online-item-description">
+                Наш сотрудник направляет Вам на электронную почту (или на любой удобный мессенджер) счет с ссылкой для оплаты.
+                При нажатии на кнопку «Оплатить» плательщик попадёт на платёжную страницу.
+              </p>
+            </div>
           </div>
-          <div class="contacts-description__box">
-            <p class="contacts-description__text">email: <a class="contacts-description__link" href="mailto:rehabilitation-52@mail.ru">rehabilitation-52@mail.ru</a></p>
-            <p class="contacts-description__text">телефон: <a class="contacts-description__link" href="tel:+79630293949">+7 (963) 029-39-49</a></p>
+
+          <div class="electronic-certificate-pay__online-item">
+            <h4 class="electronic-certificate-pay__online-item-title">Выбор способа оплаты</h4>
+            <div class="electronic-certificate-pay__online-item-box">
+              <img class="electronic-certificate-pay__online-item-img" src="../images/payment-method.png" alt="payment method">
+              <p class="electronic-certificate-pay__online-item-description">
+                Оплату можно произвести любой картой без сертификата, либо выбрать оплату сертификатом.
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
+
+          <div class="electronic-certificate-pay__online-item">
+            <h4 class="electronic-certificate-pay__online-item-title">Ввод карты «Мир»</h4>
+            <div class="electronic-certificate-pay__online-item-box">
+              <img class="electronic-certificate-pay__online-item-img" src="../images/check-card.png" alt="check card">
+              <p class="electronic-certificate-pay__online-item-description">
+                Плательщик вводит свою карту (к которой привязан электронный сертификат) и система автоматически находит сертификаты, которыми можно оплатить весь заказ или его часть.
+              </p>
+            </div>
+          </div>
+
+          <div class="electronic-certificate-pay__online-item">
+            <h4 class="electronic-certificate-pay__online-item-title">Оплата сертификатом всего заказа</h4>
+            <div class="electronic-certificate-pay__online-item-box">
+              <img class="electronic-certificate-pay__online-item-img" src="../images/all-pay-certificate.png" alt="all pay certificate">
+              <p class="electronic-certificate-pay__online-item-description">
+                Если весь заказ может быть оплачен сертификатами.
+              </p>
+            </div>
+          </div>
+
+          <div class="electronic-certificate-pay__online-item">
+            <h4 class="electronic-certificate-pay__online-item-title">Оплата сертификатом части заказа</h4>
+            <div class="electronic-certificate-pay__online-item-box">
+              <img class="electronic-certificate-pay__online-item-img" src="../images/part-pay-certificate.png" alt="part pay certificate">
+              <p class="electronic-certificate-pay__online-item-description">
+                Если сертификатов не хватает, либо не все позиции ими могут быть оплачены, потребуется доплата с той же карты.
+              </p>
+            </div>
+          </div>
+
+        </section>
+      </section>
     </div>
   </main>
 

@@ -237,6 +237,13 @@ html, body {
   letter-spacing: 1px;
 }
 
+.section-title__tells {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  justify-content: space-between;
+}
+
 .contacts-links__item {
   padding-bottom: 5px;
   font-size: 17px;
@@ -266,8 +273,16 @@ html, body {
 
 .collecting-contacts__form-title {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  font-weight: 300;
+}
+
+.collecting-contacts__form-subtitle {
+  text-align: center;
+  font-size: 19px;
+  text-transform: lowercase;
+  margin-bottom: 25px;
   font-weight: 300;
 }
 
@@ -351,4 +366,10 @@ box-shadow: 0px 0px 17px 10px rgba(255, 27, 0, 0.2);
 }
 .footer-adress__text:first-child {
   margin-bottom: 10px;
+}
+
+.footer-pay__img {
+  display: block;
+  width: 450px;
+  margin: 50px auto;
 }
