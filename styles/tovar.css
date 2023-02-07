@@ -68,12 +68,22 @@
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-.slider-button-left {
-
-}
-
 .slider-button-right {
   transform: rotate(180deg);
+}
+
+.price {
+  margin: 50px auto;
+  display: block;
+  padding: 15px 10px;
+  background-color: transparent;
+  width: 300px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ef4b4b;
+  border: none;
+  border-radius: 5px;
+  color: white; 
 }
 
 .tovar-subtitle {
@@ -107,16 +117,18 @@
 }
 
 .tovar-description-list {
-  /* #80808080 */
-  background-color: #ef4b4b;
-  padding: 70px;
+  /* #ef4b4b */
+  background-color: #80808080;
+  padding: 10px;
+  /* padding: 70px; */
   margin-bottom: 100px;
 }
 
 .tovar-description {
   background-color: white;
   font-size: 17px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  /* margin-bottom: 50px; */
   padding: 50px;
   /* -webkit-box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
