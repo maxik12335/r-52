@@ -1,13 +1,15 @@
 const catalogLink = document.querySelector("[data-catalog]")
 const catalog = document.querySelector(".catalog")
-const catalogClose = document.querySelector(".close")
+const catalogClose = document.querySelector("#catalog")
 
 catalogLink.addEventListener("click", () => {
+  document.querySelector("body").style.overflow = "hidden"
   catalog.classList.add("catalog-show")
 })
 
 catalogClose.addEventListener("click", () => {
   catalog.classList.remove("catalog-show")
+  document.querySelector("body").style.overflow = ""
 })
 
 const subLists = document.querySelectorAll(".sublist-end")
