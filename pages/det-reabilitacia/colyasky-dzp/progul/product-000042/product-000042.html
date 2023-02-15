@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../../../styles/main.css">
+  <link rel="stylesheet" href="../../../../../styles/tovar.css">
+  <title>Otto Bock Кимба Нео</title>
+</head>
+<body>
+
+  <section class="modal-order">
+    <div class="modal-order__container">
+      <form class="collecting-contacts__form modal-order__form" id="modal-order-form">
+        <div class="close modal-order__close" id="catalog">
+          <span></span>
+          <span></span>
+        </div>
+        <h3 class="modal-order__title">оставить заявку</h3>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-name" name="name" type="text" placeholder="Ваше имя">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-tel" name="tel" type="text" placeholder="Ваш телефон">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-email" name="email" type="text" placeholder="Ваш email">
+          <p class="form-error"></p>
+        </label>
+
+        <button class="collecting-contacts__submit">отправить</button>
+
+        <p class="modal-order-response"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="close" id="catalog">
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="catalog-list">
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Адаптивная одежда</h3>
+        <ul class="catalog-sublist">
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Зимняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">Детская</li>
+              <li class="catalog-list__item">Взрослая</li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Летняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+         
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">Детская</li>
+              <li class="catalog-list__item">Взрослая</li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Демисезонная</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">Детская</li>
+              <li class="catalog-list__item">Взрослая</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Детская реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Коляски для детей с ДЦП</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">Активные</li>
+                <li class="catalog-list__item">
+                  <a href="../list-products.html" class="catalog-list__link">Прогулочные</a>
+                </li>
+                <li class="catalog-list__item">Домашние</li>
+                <li class="catalog-list__item">С электроприводом</li>
+                <li class="catalog-list__item">Стулья и кресла</li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">Детские инвалидные коляски</li>
+            <li class="catalog-list__item">Детские ортезы (S.W.A.S.H.)</li>
+            <li class="catalog-list__item">Вертикализаторы</li>
+            <li class="catalog-list__item">Ходунки и опоры</li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Взрослая реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Инвалидные коляски</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">Активные</li>
+                <li class="catalog-list__item">Прогулочные</li>
+                <li class="catalog-list__item">Домашние</li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">Кресло-коляски с электроприводом</li>
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Ортезы</div>
+                <div class="catalog-list__button"></div>
+              </div>
+              
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">Коленные</li>
+                <li class="catalog-list__item">Голеностопные</li>
+                <li class="catalog-list__item">Тазобедренные</li>
+                <li class="catalog-list__item">Локтевые</li>
+                <li class="catalog-list__item">Лучезапястные</li>
+                <li class="catalog-list__item">Грудопоясничные</li>
+                <li class="catalog-list__item">Плечевые</li>
+                <li class="catalog-list__item">Поясничные корсеты</li>
+                <li class="catalog-list__item">Шейные воротники</li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">Вертикализаторы</li>
+            <li class="catalog-list__item">Функциональные кровати</li>
+            <li class="catalog-list__item">Ортопедические матрасы и подушки</li>
+            <li class="catalog-list__item">Санитарные кресла, стулья</li>
+            <li class="catalog-list__item">Костыли, трости, ходунки</li>
+          </ul>
+      </li>
+    </ul>
+    <div class="catalog__shadow"></div>
+  </section>
+
+  <section class="section-title">
+    <div class="container section-title__container">
+      <div class="logo">
+        <img src="../../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+      <p class="label__text">Technologies Rehabilitation</p>
+
+      <div class="section-title__tells">
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../../index.html">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#" data-catalog>Каталог</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../offline-page.html">оффлайн магазин</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../compensation.html">Компенсация</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../electronic-certificate.html">Электронные сертификаты</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="tovar">
+        <h2 class="tovar-title">Инвалидная детская кресло-коляска Otto Bock Старт Юниор</h2>
+        
+        <div class="slider">
+          <div class="slider-buttons">
+            <button class="slider-button-left"></button>
+            <button class="slider-button-right"></button>
+          </div>
+          <div class="slide-box">
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-1.png" alt="tovar">
+            </div>
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-2.png" alt="tovar">
+            </div>
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-3.png" alt="tovar">
+            </div>
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-4.png" alt="tovar">
+            </div>
+          </div>
+        </div>
+
+        <button class="price">89.100 р</button>
+
+        <h2 class="tovar-subtitle">
+          <span>Кресло-коляска Старт Юниор Отто Бокк</span> - легкая и максимально адаптивная, она создает оптимальные условия для ребенка. Регулируется высота и глубина сиденья, высота спинки с люмбальным изгибом, высота подлокотников, а также заднего и переднего колеса. Колесную базу можно также отрегулировать по горизонтали для увеличения степени устойчивости. Коляска оснащена откидными подлокотниками, поворотными подножками, быстросъемными колесами, противопролежневой подушкой. Кресло предназначено для детей в возрасте от 6 до 15 лет. Многочисленные возможности регулировки и оснастки детской коляски Старт Юниор позволяют индивидуально отрегулировать ее под нужды ребенка. Веселые цвета рамы и современный дизайн делают кресло-коляску для детей Старт Юниор привлекательной и для ребенка и для окружающих.
+        </h2>
+
+        <p class="tovar-bonus">
+          Выезд специалиста сборка и настройка коляски индивидуально под Вашего ребенка бесплатно
+        </p>
+
+        <p class="tovar-free-text">
+          Глубина и ширина сидения коляски регулируются по мере роста ребенка. Регулируемый угол наклона спинки коляски позволяет ребенку принять удобное положение и, в случае необходимости, например, отдохнуть. Детская инвалидная коляска Лиза складывается по принципу «ножниц», что существенно облегчает ее транспортировку и хранение. Такие регулировки, как изменение глубины сиденья, угла наклона спинки, высоты подножки, а также использование дополнительных аксессуаров дают возможность создавать ребенку удобное положение во время прогулок.
+        </p>
+
+        <p class="tovar-important">
+          Каждому покупателю колясок для детей с ДЦП мы выдадим всю необходимую для предоставления в ФСС документацию. Это позволит вам получить компенсацию финансов, затраченных на приобретение средства передвижения.
+        </p>
+
+        <div class="tovar-description-list">
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">Особенности кресло-коляски Старт Юниор Otto Bock для детей</h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Рама — складная, дюралюминиевая.
+              </li>
+              <li class="tovar-description-list__item">
+                Цвет рамы: красный, желтый.
+              </li>
+              <li class="tovar-description-list__item">
+                Сиденье и спинка из высокопрочного нейлона.
+              </li>
+              <li class="tovar-description-list__item">
+                Противопролежневая подушка.
+              </li>
+              <li class="tovar-description-list__item">
+                Спинка с анатомическим люмбальным изгибом.
+              </li>
+              <li class="tovar-description-list__item">
+                Регулировка высоты спинки, глубины и высоты сиденья.
+              </li>
+              <li class="tovar-description-list__item">
+                Скошенные, откидные подлокотники длинной 300 мм с регулировкой по высоте.
+              </li>
+              <li class="tovar-description-list__item">
+                Подножки поворотные, съемные, регулируемые по длине (27 – 47 см от пола).
+              </li>
+              <li class="tovar-description-list__item">
+                Дополнительные упоры для голени.
+              </li>
+              <li class="tovar-description-list__item">
+                Колеса задние — быстросъемные, пневматические (или литые под заказ), передние — литые.
+              </li>
+              <li class="tovar-description-list__item">
+                Регулировка задних колес по вертикали и горизонтали (в сторону увеличения межосевого расстояния).
+              </li>
+              <li class="tovar-description-list__item">
+                Регулировка передних колес по высоте.
+              </li>
+              <li class="tovar-description-list__item">
+                Рычаги стояночного тормоза слева и справа.
+              </li>
+              <li class="tovar-description-list__item">
+                Катафоты.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">Дополнительные аксессуары кресло-коляски Старт Юниор  Отто Бок для детей</h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Транзитные колеса
+              </li>
+              <li class="tovar-description-list__item">
+                Страховочное устройство от опрокидывания
+              </li>
+              <li class="tovar-description-list__item">
+                Тростедержатель
+              </li>
+              <li class="tovar-description-list__item">
+                Столик
+              </li>
+              <li class="tovar-description-list__item">
+                Фиксирующий ремень для стоп
+              </li>
+              <li class="tovar-description-list__item">
+                Фиксирующий ремень для тела
+              </li>
+              <li class="tovar-description-list__item">
+                Откидывающаяся спинка
+              </li>
+              <li class="tovar-description-list__item">
+                Спинка с регулируемым углом наклона 30°
+              </li>
+              <li class="tovar-description-list__item">
+                Защитные декоративные диски на колеса
+              </li>
+              <li class="tovar-description-list__item">
+                Подголовник
+              </li>
+              <li class="tovar-description-list__item">
+                Подставка для капельницы
+              </li>
+              <li class="tovar-description-list__item">
+                Сплошная подножка
+              </li>
+              <li class="tovar-description-list__item">
+                Тормоз для сопровождающего лица
+              </li>
+              <li class="tovar-description-list__item">
+                Насос
+              </li>
+              <li class="tovar-description-list__item">
+                Набор инструментов
+              </li>
+              <li class="tovar-description-list__item">
+                Боковые поддержки 
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="table-box">
+          <h2 class="table-title">
+            Технические характеристики кресло-коляски Старт Юниор для детей
+          </h2>
+
+          <table class="table">
+            <tbody>
+              <tr>
+                <td class="table-category">Характеристики</td>
+                <td class="table-category">Старт Юниор</td>
+              </tr>
+              <tr>
+                <td>Длина</td>
+                <td>97.5 см</td>
+              </tr>
+              <tr>
+                <td>Ширина</td>
+                <td>57-65 см</td>
+              </tr>
+              <tr>
+                <td>Ширина сидения</td>
+                <td>28 см , 30,5 см, 33 см, 35,5 см, 38 см</td>
+              </tr>
+              <tr>
+                <td>Глубина сидения</td>
+                <td>31 см, 34 см, 37 см</td>
+              </tr>
+              <tr>
+                <td>Высота спинки</td>
+                <td>30 см, 32,5 см, 35 см, 37,5 см</td>
+              </tr>
+              <tr>
+                <td>Длина подножки</td>
+                <td>16 – 31 см / 32 – 45 см</td>
+              </tr>
+              <tr>
+                <td>Диаметр колес передние/задние</td>
+                <td>5,6/20, 22, 24 дюйма (стандартно идет 22")</td>
+              </tr>
+              <tr>
+                <td>Максимальная нагрузка</td>
+                <td>90 кг</td>
+              </tr>
+              <tr>
+                <td>Гарантия:</td>
+                <td>на раму - 4 года, на прочие детали - 1 год</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <section class="collecting-contacts">
+          <div class="container collecting-contacts__container">
+            <h1 class="collecting-contacts__title">
+              Обеспечим техническими средствами реабилитации по электронным сертификатам
+            </h1>
+      
+            <h2 class="collecting-contacts__form-title">остались вопросы ?</h2>
+            <p class="collecting-contacts__form-subtitle">
+              Оставьте контакты и мы скоро свяжемся с вами
+            </p>
+      
+            <form class="collecting-contacts__form" id="form-question">
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-name" type="text" placeholder="Ваше имя">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-tel" type="text" placeholder="Ваш телефон">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-email" type="text" placeholder="Ваш email">
+                <p class="form-error form-error-black"></p>
+              </label>
+      
+              <button class="collecting-contacts__submit">оставить заявку</button>
+
+              <p class="form-question-response"></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="logo">
+        <img src="../../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+
+      <div class="footer-adress">
+        <p class="footer-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+        <p class="footer-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+      </div>
+
+      <div class="contacts-links">
+        <a class="contacts-links__item" href="mailto:rehabilitation-52@mail.ru">rehabilitation-52@mail.ru</a>
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+      </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <section class="footer-pay">
+    <div class="container">
+      <img class="footer-pay__img" src="../../../../../images/footer-pay.png" alt="pay">
+    </div>
+  </section>
+
+  <script src="../../../../../jquery/jquery-3.6.3.min.js"></script>
+  <script src="../../../../../jquery/jquery.maskedinput.min.js"></script>
+  <script src="../../../../../scripts/menu.js"></script>
+  <script src="../../../../../scripts/slider.js"></script>
+  <script src="../../../../../scripts/productFormOrder.js"></script>
+  <script src="../../../../../scripts/productFormQuestion.js"></script>
+  <script>
+   
+  </script>
+</body>
+</html>

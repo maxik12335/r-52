@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../../../styles/main.css">
+  <link rel="stylesheet" href="../../../../../styles/tovar.css">
+  <title>Otto Bock Кимба Нео</title>
+</head>
+<body>
+
+  <section class="modal-order">
+    <div class="modal-order__container">
+      <form class="collecting-contacts__form modal-order__form" id="modal-order-form">
+        <div class="close modal-order__close" id="catalog">
+          <span></span>
+          <span></span>
+        </div>
+        <h3 class="modal-order__title">оставить заявку</h3>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-name" name="name" type="text" placeholder="Ваше имя">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-tel" name="tel" type="text" placeholder="Ваш телефон">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-email" name="email" type="text" placeholder="Ваш email">
+          <p class="form-error"></p>
+        </label>
+
+        <button class="collecting-contacts__submit">отправить</button>
+
+        <p class="modal-order-response"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="close" id="catalog">
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="catalog-list">
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Адаптивная одежда</h3>
+        <ul class="catalog-sublist">
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Зимняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">Детская</li>
+              <li class="catalog-list__item">Взрослая</li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Летняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+         
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">Детская</li>
+              <li class="catalog-list__item">Взрослая</li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Демисезонная</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">Детская</li>
+              <li class="catalog-list__item">Взрослая</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Детская реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Коляски для детей с ДЦП</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">Активные</li>
+                <li class="catalog-list__item">
+                  <a href="../list-products.html" class="catalog-list__link">Прогулочные</a>
+                </li>
+                <li class="catalog-list__item">Домашние</li>
+                <li class="catalog-list__item">С электроприводом</li>
+                <li class="catalog-list__item">Стулья и кресла</li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">Детские инвалидные коляски</li>
+            <li class="catalog-list__item">Детские ортезы (S.W.A.S.H.)</li>
+            <li class="catalog-list__item">Вертикализаторы</li>
+            <li class="catalog-list__item">Ходунки и опоры</li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Взрослая реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Инвалидные коляски</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">Активные</li>
+                <li class="catalog-list__item">Прогулочные</li>
+                <li class="catalog-list__item">Домашние</li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">Кресло-коляски с электроприводом</li>
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Ортезы</div>
+                <div class="catalog-list__button"></div>
+              </div>
+              
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">Коленные</li>
+                <li class="catalog-list__item">Голеностопные</li>
+                <li class="catalog-list__item">Тазобедренные</li>
+                <li class="catalog-list__item">Локтевые</li>
+                <li class="catalog-list__item">Лучезапястные</li>
+                <li class="catalog-list__item">Грудопоясничные</li>
+                <li class="catalog-list__item">Плечевые</li>
+                <li class="catalog-list__item">Поясничные корсеты</li>
+                <li class="catalog-list__item">Шейные воротники</li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">Вертикализаторы</li>
+            <li class="catalog-list__item">Функциональные кровати</li>
+            <li class="catalog-list__item">Ортопедические матрасы и подушки</li>
+            <li class="catalog-list__item">Санитарные кресла, стулья</li>
+            <li class="catalog-list__item">Костыли, трости, ходунки</li>
+          </ul>
+      </li>
+    </ul>
+    <div class="catalog__shadow"></div>
+  </section>
+
+  <section class="section-title">
+    <div class="container section-title__container">
+      <div class="logo">
+        <img src="../../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+      <p class="label__text">Technologies Rehabilitation</p>
+
+      <div class="section-title__tells">
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../../index.html">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#" data-catalog>Каталог</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../offline-page.html">оффлайн магазин</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../compensation.html">Компенсация</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../electronic-certificate.html">Электронные сертификаты</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="tovar">
+        <h2 class="tovar-title">Прогулочная детская кресло-коляска Jacko Streeter</h2>
+        
+        <div class="slider">
+          <div class="slider-buttons">
+            <button class="slider-button-left"></button>
+            <button class="slider-button-right"></button>
+          </div>
+          <div class="slide-box">
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-1.png" alt="tovar">
+            </div>
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-2.png" alt="tovar">
+            </div>
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-3.png" alt="tovar">
+            </div>
+          </div>
+        </div>
+
+        <button class="price">157.850 р</button>
+
+        <h2 class="tovar-subtitle">
+          <span>Кресло-коляска Старт Юниор Отто Бокк</span> - разработана профессиональными дизайнерами и докторами, и опережает другие модели не только в дизайне, но и в маневренности и легкости в управлении - это одна из самых легких колясок в данной категории. Кроме того 26 см колеса позволяют использовать кресло-коляску не только в городе, но и для прогулок на свежем воздухе по бездорожью.
+        </h2>
+
+        <p class="tovar-bonus">
+          Выезд специалиста сборка и настройка коляски индивидуально под Вашего ребенка бесплатно
+        </p>
+
+        <p class="tovar-free-text">
+          Новый алюминиевый каркас кресло-коляски Jacko Streeter (сплав алюминия и титана) обеспечивает ей низкий вес и высокую прочность. Полностью складной каркас включает среди прочего прочную раму с хорошей амортизацией, удобное для пациента сидение, безопасную тормозную систему, эргономичную ручку с регулировкой высоты для управления кресло-коляской.
+        </p>
+
+        <p class="tovar-free-text">
+          Сидение кресло-коляски регулируемое в нескольких положениях, с полностью откидываемой спинкой до положения «лежа». Модное текстильное покрытие сидения полностью съемное.
+        </p>
+
+        <p class="tovar-free-text">
+          Кресло-коляска может быть оснащена дополнительными аксессуарами, регулируемыми под каждого конкретного пациента. Удобство в обращении с креслом-коляской обеспечивается также полностью складным каркасом даже с прикрепленным сидением. Кресло-коляска соответствует новейшим стандартам ЕС, а также гигиеническим техническим требованиям и требованиям безопасности.
+        </p>
+
+        <p class="tovar-important">
+          Каждому покупателю колясок для детей с ДЦП мы выдадим всю необходимую для предоставления в ФСС документацию. Это позволит вам получить компенсацию финансов, затраченных на приобретение средства передвижения.
+        </p>
+
+        <div class="tovar-description-list">
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">Особенности кресло-коляски Jacko Streeter</h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                100% высокотехнологичная кресло-коляска для детей с нарушением функций опорно-двигательного аппарата
+              </li>
+              <li class="tovar-description-list__item">
+                Рама с хорошей амортизацией для любых дорог
+              </li>
+              <li class="tovar-description-list__item">
+                Полностью откидываемая спинка  
+              </li>
+              <li class="tovar-description-list__item">
+                Инновационный механизм складывания
+              </li>
+              <li class="tovar-description-list__item">
+                Легкая и компактная
+              </li>
+              <li class="tovar-description-list__item">
+                В конструкции этой кресло-коляски учтены все потребности и пожелания пациентов
+              </li>
+              <li class="tovar-description-list__item">
+                Идеально подходит для детей с ДЦП, поскольку имеет широкий выбор дополнительных аксессуаров для фиксации пациента (ремни, подголовники, абдукторы, боковые подушки, фиксаторы коленей и голени)
+              </li>
+              <li class="tovar-description-list__item">
+                Каркас из алюминия складной (по горизонтальной оси)
+              </li>
+              <li class="tovar-description-list__item">
+                Съемная моноподножка
+              </li>
+              <li class="tovar-description-list__item">
+                Регулировка подножки по длине голени и углу наклона
+              </li>
+              <li class="tovar-description-list__item">
+                Изменение угла наклона опоры для стоп
+              </li>
+              <li class="tovar-description-list__item">
+                Съемная мягкая обивка сиденья и спинки
+              </li>
+              <li class="tovar-description-list__item">
+                Съемная защитная дуга
+              </li>
+              <li class="tovar-description-list__item">
+                Изменение угла наклона спинки  до 175°  
+              </li>
+              <li class="tovar-description-list__item">
+                Регулируемые ручки для толкания
+              </li>
+              <li class="tovar-description-list__item">
+                Передние колеса литые 17.5 см, с  пластиковыми ступицами
+              </li>
+              <li class="tovar-description-list__item">
+                Задние колеса литые 26.5 см, с  пластиковыми ступицами
+              </li>
+              <li class="tovar-description-list__item">
+                Два стояночных тормоза
+              </li>
+              <li class="tovar-description-list__item">
+                Дополнительно может комплектоваться: козырьком, 5-точечным ремнем безопасности, абдуктором, подголовником, и др.
+              </li>
+              <li class="tovar-description-list__item">
+                Передние колеса литые 20 см, - литые
+              </li>
+              <li class="tovar-description-list__item">
+                Задние колеса литые 30 см, - пневмо
+              </li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Стандартная комплектация кресло-коляски Patron Jacko Streeter для детей с ДЦП
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Полностью откидная спинка
+              </li>
+              <li class="tovar-description-list__item">
+                Регулируемая подножка по высоте и углу наклона
+              </li>
+              <li class="tovar-description-list__item">
+                Регулируемая платформа подножки под углом наклона
+              </li>
+              <li class="tovar-description-list__item">
+                175/260 мм колеса литые
+              </li>
+              <li class="tovar-description-list__item">
+                Съемный руль (передняя ручка)
+              </li>
+              <li class="tovar-description-list__item">
+                Эргономичная и регулируемая ручка для сопровождающего
+              </li>
+              <li class="tovar-description-list__item">
+                Мягкая обивка рамы с отражающими знаками
+              </li>
+              <li class="tovar-description-list__item">
+                Цвет рамы и расцветка обивки согласно текущему предложению.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tovar-description tovar-description-shadow-none">
+
+          <h3 class="tovar-description__list-title tovar-description__list-title-dop">
+            Цвета коляски Jacko Streeter
+          </h3>
+
+          <ul class="dop-tovar-description__list">
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-1.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Черный с зеленым</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-2.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Черный с синим</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-3.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Желтый с зеленым</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-4.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Красный с черным</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-5.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Черный / зеленый</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-6.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Черный / розовый</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-7.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Черный / графит</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-8.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Черный / голубой</p>
+            </li>
+          </ul>
+
+          <h3 class="tovar-description__list-title tovar-description__list-title-dop">
+            Дополнительные аксессуары инвалидной кресло-коляски Patron JACKO 5 Streeter
+          </h3>
+
+          <h4 class="tovar-description__list-title tovar-description__list-title-dop">
+            ГОЛОВА
+          </h4>
+
+          <ul class="dop-tovar-description__list">
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-9.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Подголовник классик</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-10.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Подголовник</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-11.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Поддержка (валик) шеи</p>
+            </li>
+          </ul>
+
+          <h4 class="tovar-description__list-title tovar-description__list-title-dop">
+            ТУЛОВИЩЕ
+          </h4>
+
+          <ul class="dop-tovar-description__list">
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-12.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">5-ти точечный ремень</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-13.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">4-х точечный ремень</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-14.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Тоненький грудной ремень</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-15.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">H-ремень</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-16.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Боковые упоры</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-17.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Люмбальная подушечка</p>
+            </li>
+          </ul>
+
+          <h4 class="tovar-description__list-title tovar-description__list-title-dop">
+            НОГИ / РУКИ
+          </h4>
+
+          <ul class="dop-tovar-description__list">
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-18.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Фиксатор стоп для</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-19.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Большая боковая защита</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-20.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Боковая защита для</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-21.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Ремень для голени</p>
+            </li>
+          </ul>
+
+          <h4 class="tovar-description__list-title tovar-description__list-title-dop">
+            ЗАЩИТА / ТРАНСПОРТНЫЕ АКСЕССУАРЫ
+          </h4>
+
+          <ul class="dop-tovar-description__list">
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-22.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Мягкие накладки (чехлы) на боковые трубки</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-23.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Ремень протектор размер</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-24.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Навес классический (только T5-MINI)</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-25.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Зонтик от солнца (только T5-MINI)</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-26.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Дождевик (размер S)</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-27.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Корзина до 3 кг</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-28.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Сумка</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-29.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Летний чехол на ноги (размер L)</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-30.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Зимний чехол на ноги (размер L)</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-31.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Ремень Velcro для подножки</p>
+            </li>
+          </ul>
+
+          <h4 class="tovar-description__list-title tovar-description__list-title-dop">
+            СПЕЦИАЛЬНЫЕ ОПЦИИ
+          </h4>
+
+          <ul class="dop-tovar-description__list">
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-32.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Передняя вилка с поворотным замком (комплект)</p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-33.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">Блокиратор для спастических детей</p>
+            </li>
+          </ul>
+         
+        </div>
+
+
+        <div class="table-box">
+          <h2 class="table-title">
+            Технические характеристики кресло-коляски Jacko Streeter
+          </h2>
+
+          <table class="table">
+            <tbody>
+              <tr>
+                <td class="table-category">Размеры</td>
+                <td class="table-category">STD</td>
+                <td class="table-category">MAXI</td>
+              </tr>
+              <tr>
+                <td>Высота спинки (см)</td>
+                <td>65</td>
+                <td>73</td>
+              </tr>
+              <tr>
+                <td>Глубина сидения (см)</td>
+                <td>25/27.5/30</td>
+                <td>32/34.5/37</td>
+              </tr>
+              <tr>
+                <td>Ширина сидения (см)</td>
+                <td>34</td>
+                <td>38</td>
+              </tr>
+              <tr>
+                <td>Расстояние от сидения до подножки (см)</td>
+                <td>24-38</td>
+                <td>24-40</td>
+              </tr>
+              <tr>
+                <td>Угол наклона спинки</td>
+                <td>0°-155°</td>
+                <td>0°-155°</td>
+              </tr>
+              <tr>
+                <td>Угол наклона сидения</td>
+                <td>20°</td>
+                <td>20°</td>
+              </tr>
+              <tr>
+                <td>Общая длина (см)</td>
+                <td>78</td>
+                <td>78</td>
+              </tr>
+              <tr>
+                <td>Общая ширина (см)</td>
+                <td>59</td>
+                <td>63</td>
+              </tr>
+              <tr>
+                <td>Общая высота/с ручками (см)</td>
+                <td>95/115</td>
+                <td>97/120</td>
+              </tr>
+              <tr>
+                <td>Тормоз</td>
+                <td>ножной</td>
+                <td>ножной</td>
+              </tr>
+              <tr>
+                <td>Вес (кг)</td>
+                <td>15.5</td>
+                <td>17.5</td>
+              </tr>
+              <tr>
+                <td>Максимальный вес пользователя (кг)</td>
+                <td>40</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Длина в сложенном виде (см)</td>
+                <td>86</td>
+                <td>92</td>
+              </tr>
+              <tr>
+                <td>Ширина в сложенном виде (см)</td>
+                <td>59</td>
+                <td>63</td>
+              </tr>
+              <tr>
+                <td>Высота в сложенном виде (см)</td>
+                <td>37</td>
+                <td>37</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <section class="collecting-contacts">
+          <div class="container collecting-contacts__container">
+            <h1 class="collecting-contacts__title">
+              Обеспечим техническими средствами реабилитации по электронным сертификатам
+            </h1>
+      
+            <h2 class="collecting-contacts__form-title">остались вопросы ?</h2>
+            <p class="collecting-contacts__form-subtitle">
+              Оставьте контакты и мы скоро свяжемся с вами
+            </p>
+      
+            <form class="collecting-contacts__form" id="form-question">
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-name" type="text" placeholder="Ваше имя">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-tel" type="text" placeholder="Ваш телефон">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-email" type="text" placeholder="Ваш email">
+                <p class="form-error form-error-black"></p>
+              </label>
+      
+              <button class="collecting-contacts__submit">оставить заявку</button>
+
+              <p class="form-question-response"></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="logo">
+        <img src="../../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+
+      <div class="footer-adress">
+        <p class="footer-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+        <p class="footer-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+      </div>
+
+      <div class="contacts-links">
+        <a class="contacts-links__item" href="mailto:rehabilitation-52@mail.ru">rehabilitation-52@mail.ru</a>
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+      </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <section class="footer-pay">
+    <div class="container">
+      <img class="footer-pay__img" src="../../../../../images/footer-pay.png" alt="pay">
+    </div>
+  </section>
+
+  <script src="../../../../../jquery/jquery-3.6.3.min.js"></script>
+  <script src="../../../../../jquery/jquery.maskedinput.min.js"></script>
+  <script src="../../../../../scripts/menu.js"></script>
+  <script src="../../../../../scripts/slider.js"></script>
+  <script src="../../../../../scripts/productFormOrder.js"></script>
+  <script src="../../../../../scripts/productFormQuestion.js"></script>
+  <script>
+   
+  </script>
+</body>
+</html>
