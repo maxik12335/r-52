@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../../../styles/main.css">
+  <link rel="stylesheet" href="../../../../../styles/tovar.css">
+  <title>HOGGI BINGO Evolution</title>
+</head>
+<body>
+  <section class="modal-order">
+    <div class="modal-order__container">
+      <form class="collecting-contacts__form modal-order__form" id="modal-order-form">
+        <div class="close modal-order__close" id="catalog">
+          <span></span>
+          <span></span>
+        </div>
+        <h3 class="modal-order__title">оставить заявку</h3>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-name" name="name" type="text" placeholder="Ваше имя">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-tel" name="tel" type="text" placeholder="Ваш телефон">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-email" name="email" type="text" placeholder="Ваш email">
+          <p class="form-error"></p>
+        </label>
+
+        <button class="collecting-contacts__submit">отправить</button>
+
+        <p class="modal-order-response"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="close" id="catalog">
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="catalog-list">
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Адаптивная одежда</h3>
+        <ul class="catalog-sublist">
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Зимняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/winter/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/winter/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Летняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+         
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/summer/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/summer/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Демисезонная</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/demi-season/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/demi-season/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Детская реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Коляски для детей с ДЦП</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/strollers-dcp/walking/list-products.html">
+                    Прогулочные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/strollers-dcp/domestic/list-products.html">
+                    Домашние
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/chairs-and-armchairs/list-products.html">
+                Стулья и кресла
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/children-orthoses-(S.W.A.S.H.)/list-products.html">
+                Детские ортезы (S.W.A.S.H.)
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/verticalizers/list-products.html">
+                Вертикализаторы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/walkers-and-supports/list-products.html">
+                Ходунки и опоры
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Взрослая реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Инвалидные коляски</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/handicapped-strollers/active/list-products.html">
+                    Активные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/handicapped-strollers/walking/list-products.html">
+                    Прогулочные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/handicapped-strollers/domestic/list-products.html">
+                    Домашние
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Ортезы</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/knee/list-products.html">
+                    Коленные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/ankles/list-products.html">
+                    Голеностопные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/hip/list-products.html">
+                    Тазобедренные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/elbow/list-products.html">
+                    Локтевые
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/radiocarpal/list-products.html">
+                    Лучезапястные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/thoracolumbar/list-products.html">
+                    Грудопоясничные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/shoulder/list-products.html">
+                    Плечевые
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/lumbar-corsets/list-products.html">
+                    Поясничные корсеты
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/neck-collars/list-products.html">
+                    Шейные воротники
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/verticalizers/list-products.html">
+                Вертикализаторы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/functional-beds/list-products.html">
+                Функциональные кровати
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthopedic-mattresses-and-pillows/list-products.html">
+                Ортопедические матрасы и подушки
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/sanitary-armchair-and-chairs/list-products.html">
+                Санитарные кресла, стулья
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/crutches-and-canes-and-walkers/list-products.html">
+                Костыли, трости, ходунки
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Кресло-коляски с электроприводом</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/electric-wheelchairs/list-products.html">
+                Электроколяски
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/folding-beds/list-products.html">
+                Складные кровати
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/all-terrain/list-products.html">
+                Вездеходы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/stepping-stones/list-products.html">
+                Ступенькоходы
+              </a>
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <div class="catalog__shadow"></div>
+  </section>
+
+  <section class="section-title">
+    <div class="container section-title__container">
+      <div class="logo">
+        <img src="../../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+      <p class="label__text">Technologies Rehabilitation</p>
+
+      <div class="section-title__tells">
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../../index.html">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#" data-catalog>Каталог</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../offline-page.html">оффлайн магазин</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../compensation.html">Компенсация</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../electronic-certificate.html">Электронные сертификаты</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="tovar">
+        <h2 class="tovar-title">
+          Кресло-коляска для детей с ДЦП HOGGI BINGO Evolution на домашней раме COBRA
+        </h2>
+        
+        <div class="slider">
+          <div class="slider-buttons">
+            <button class="slider-button-left"></button>
+            <button class="slider-button-right"></button>
+          </div>
+          <div class="slide-box">
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-1.jpg" alt="tovar">
+            </div>
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-2.jpg" alt="tovar">
+            </div>
+          </div>
+        </div>
+
+        <button class="price">275.250 р</button>
+
+        <h2 class="tovar-subtitle">
+          <span>Коляска для детей с ДЦП HOGGI BINGO Evolution COBRA</span> - выполнена на основе домашней рамы. Устройство разработано с таким же удобным креслом, как и в прогулочном варианте. Отличие только в базе. 
+          Рама КОБРА позволяет менять высоту сиденья вместе с ребенком. Механизм с газовой пружиной обеспечивает плавное изменение высоты сиденья.
+        </h2>
+
+        <p class="tovar-bonus">
+          Выезд специалиста сборка и настройка коляски индивидуально под Вашего ребенка бесплатно
+        </p>
+
+        <p class="tovar-important">
+          Каждому покупателю колясок для детей с ДЦП мы выдадим всю необходимую для предоставления в ФСС документацию. Это позволит вам получить компенсацию финансов, затраченных на приобретение средства передвижения.
+        </p>
+
+        <div class="tovar-description-list">
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Особенности комнатной инвалидной коляски HOGGI BINGO Evolution для детей с ДЦП
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Регулируемая глубина сиденья
+              </li>
+              <li class="tovar-description-list__item">
+                Регулируемая ширина сиденья
+              </li>
+              <li class="tovar-description-list__item">
+                Регулируемый угол наклона спинки. Спинка легко откидывается до 160 градусов (положение лежа)
+              </li>
+              <li class="tovar-description-list__item">
+                Регулируемая длина ручки для толкания
+              </li>
+              <li class="tovar-description-list__item">
+                Легко складываемая кресла-коляска 
+              </li>
+              <li class="tovar-description-list__item">
+                Регулировка угла наклона сиденья 45 градусов (вперед и назад)
+              </li>
+              <li class="tovar-description-list__item">
+                Угол наклона спинки может достигать 160 градусов  (лежа)
+              </li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Базовая комплектация комнатной инвалидной коляски HOGGI BINGO Evolution для детей с ДЦП
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Домашняя X образная рама
+              </li>
+              <li class="tovar-description-list__item">
+                5-и точечный ремень
+              </li>
+              <li class="tovar-description-list__item">
+                Абдуктор съемный откидной
+              </li>
+              <li class="tovar-description-list__item">
+                Регулировка угла сиденья
+              </li>
+              <li class="tovar-description-list__item">
+                Мягкие подушки подголовника
+              </li>
+              <li class="tovar-description-list__item">
+                Поручень
+              </li>
+              <li class="tovar-description-list__item">
+                Регулируемые тазовые поддержки
+              </li>
+              <li class="tovar-description-list__item">
+                Ремни для стоп
+              </li>
+              <li class="tovar-description-list__item">
+                Механизмы регулировки
+              </li>
+              <li class="tovar-description-list__item">
+                Мягкие упоры для голени
+              </li>
+              <li class="tovar-description-list__item">
+                Регулируемая подножка по высоте 
+              </li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Дополнительная комплектация комнатной инвалидной коляски HOGGI BINGO Evolution для детей с ДЦП
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Боковые поддержки туловища
+              </li>
+              <li class="tovar-description-list__item">
+                Ремень для голеностопов
+              </li>
+              <li class="tovar-description-list__item">
+                Фиксирующий жилет
+              </li>
+              <li class="tovar-description-list__item">
+                Ремень в виде штанов
+              </li>
+              <li class="tovar-description-list__item">
+                Столик для терапии
+              </li>
+              <li class="tovar-description-list__item">
+                Столик для терапии с регулировкой по высоте
+              </li>
+              <li class="tovar-description-list__item">
+                4-х точечный ремень
+              </li>
+              <li class="tovar-description-list__item">
+                Подножка с регулируемым углом наклона, с фиксатором
+              </li>
+              <li class="tovar-description-list__item">
+                Ремень поясной
+              </li>
+              <li class="tovar-description-list__item">
+                Фиксатор по типу майка
+              </li>
+              <li class="tovar-description-list__item">
+                Ручной тормоз для сопровождающего
+              </li>
+              <li class="tovar-description-list__item">
+                Ремень для закрепления икр
+              </li>
+              <li class="tovar-description-list__item">
+                Коленчато-угловое устройство 90-160°
+              </li>
+              <li class="tovar-description-list__item">
+                Боковые подушки подголовника(низкие)
+              </li>
+              <li class="tovar-description-list__item">
+                Абдуктор фиксированный
+              </li>
+              <li class="tovar-description-list__item">
+                Подлокотники регулируемые по высоте 
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="table-box">
+          <h2 class="table-title">
+            Технические характеристики комнатной инвалидной коляски HOGGI BINGO Evolution для детей с ДЦП
+          </h2>
+
+          <table class="table">
+            <tbody>
+              <tr>
+                <td class="table-category">Карта размеров</td>
+                <td class="table-category">размер 1</td>
+                <td class="table-category">размер 2</td>
+                <td class="table-category">размер 2 XL</td>
+              </tr>
+              <tr>
+                <td>Ширина сиденья</td>
+                <td>18-30 см</td>
+                <td>23-35 см</td>
+                <td>23-35 см/28-40 см</td>
+              </tr>
+              <tr>
+                <td>Глубина сиденья</td>
+                <td>16-34 см</td>
+                <td>22-40 см</td>
+                <td>30-45 см</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="table-center table-td-bold">Угол наклона сиденья</td>
+              </tr>
+              <tr>
+                <td>По направлению движения</td>
+                <td>45°</td>
+                <td>45°</td>
+                <td>45°</td>
+              </tr>
+              <tr>
+                <td>Против направления движения</td>
+                <td>45°</td>
+                <td>45°</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Высота спинки</td>
+                <td>45-63 см</td>
+                <td>54-75 см</td>
+                <td>62-83 см</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="table-center table-td-bold">Наклон спинки</td>
+              </tr>
+              <tr>
+                <td>По направлению движения</td>
+                <td>90°-160°</td>
+                <td>90°-160°</td>
+                <td>90°-135°</td>
+              </tr>
+              <tr>
+                <td>Против направления движения</td>
+                <td>90°-160°</td>
+                <td>90°-160°</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Длина подножки</td>
+                <td>16-37 см</td>
+                <td>16-40 см</td>
+                <td>16-40 см</td>
+              </tr>
+              <tr>
+                <td>Общая высота</td>
+                <td>75-110 см</td>
+                <td>75-110 см</td>
+                <td>86-118 см</td>
+              </tr>
+              <tr>
+                <td>Общая ширина</td>
+                <td>63 см</td>
+                <td>68 см</td>
+                <td>68 см/73 см</td>
+              </tr>
+              <tr>
+                <td>Размер в сложенном виде</td>
+                <td>78х62х38 см</td>
+                <td>78х67х38 см</td>
+                <td>78х67х38 см</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="table-center table-td-bold">Максимальная нагрузка</td>
+              </tr>
+              <tr>
+                <td>Сиденье </td>
+                <td>50 кг</td>
+                <td>50 кг</td>
+                <td>50 кг</td>
+              </tr>
+              <tr>
+                <td>Рама</td>
+                <td>60 кг</td>
+                <td>60 кг</td>
+                <td>60 кг</td>
+              </tr>
+              <tr>
+                <td>Гарантия: 1 год</td>
+                <td colspan="3"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <section class="collecting-contacts">
+          <div class="container collecting-contacts__container">
+            <h1 class="collecting-contacts__title">
+              Обеспечим техническими средствами реабилитации по электронным сертификатам
+            </h1>
+      
+            <h2 class="collecting-contacts__form-title">остались вопросы ?</h2>
+            <p class="collecting-contacts__form-subtitle">
+              Оставьте контакты и мы скоро свяжемся с вами
+            </p>
+      
+            <form class="collecting-contacts__form" id="form-question">
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-name" type="text" placeholder="Ваше имя">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-tel" type="text" placeholder="Ваш телефон">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-email" type="text" placeholder="Ваш email">
+                <p class="form-error form-error-black"></p>
+              </label>
+      
+              <button class="collecting-contacts__submit">оставить заявку</button>
+
+              <p class="form-question-response"></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="logo">
+        <img src="../../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+
+      <div class="footer-adress">
+        <p class="footer-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+        <p class="footer-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+      </div>
+
+      <div class="contacts-links">
+        <a class="contacts-links__item" href="mailto:rehabilitation-52@mail.ru">rehabilitation-52@mail.ru</a>
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <section class="footer-pay">
+    <div class="container">
+      <img class="footer-pay__img" src="../../../../../images/footer-pay.png" alt="pay">
+    </div>
+  </section>
+
+  <script src="../../../../../jquery/jquery-3.6.3.min.js"></script>
+  <script src="../../../../../jquery/jquery.maskedinput.min.js"></script>
+  <script src="../../../../../scripts/menu.js"></script>
+  <script src="../../../../../scripts/slider.js"></script>
+  <script src="../../../../../scripts/productFormOrder.js"></script>
+  <script src="../../../../../scripts/productFormQuestion.js"></script>
+  <script>
+   
+  </script>
+</body>
+</html>
