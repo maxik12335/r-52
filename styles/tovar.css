@@ -331,6 +331,10 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
 }
 
+.table-td-null {
+  height: 40px;
+}
+
 .modal-order {
   position: fixed;
   width: 100%;

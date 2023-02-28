@@ -8,7 +8,7 @@ $formName = $formData -> name;
 $formTel = $formData -> tel;
 $formeMail = $formData -> email;
 
-$to = "maxim.it@bk.ru";
+$to = "9630293949@mail.ru";
 $subject = "Заявка на стоимость";
 $message = "Имя: " . $formName . "Номер: " . $formTel . "Почта: " . $formeMail;
 
