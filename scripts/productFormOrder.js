@@ -1,3 +1,15 @@
+// Вынести в отдельный файл !
+// Функция по избавлению от лишнего текста в заголовках
+
+const lengthText = window.innerWidth > 780 ? 50 : 30
+
+const tovarTitle = document.querySelectorAll('.dop-tovar-description__item-title')
+tovarTitle.forEach(item => {
+  if(item.textContent.trim().length > lengthText) {
+    item.textContent = item.textContent.slice(0,lengthText) + "..."
+  }
+})
+
 const modalOrder = document.querySelector(".modal-order")
 const modalOrderClose = document.querySelector(".modal-order__close")
 const modalOrderOpenButton = document.querySelector(".price")

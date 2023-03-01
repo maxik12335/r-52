@@ -4,7 +4,8 @@ const rightButton = document.querySelector(".slider-button-right")
 const slideCount = document.querySelectorAll(".slider-item")
 
 let slideTransform = 0
-const slideTransformStep = 600
+let slideTransformStep = window.innerWidth > 780 ? 600 : 425
+slideTransformStep = window.innerWidth < 450 ? 300 : 425
 
 rightButton.addEventListener("click", () => {
   setButtonDisabled()

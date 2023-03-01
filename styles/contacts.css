@@ -38,3 +38,47 @@
   color: red;
   /* color: rgb(8, 8, 154); */
 }
+
+@media(max-width: 1050px) {
+  .contacts-description__text {
+    font-size: 17px;
+  }
+  
+  .contacts-title {
+    font-size: 40px;
+  }
+
+  .map {
+    margin-right: 40px;
+  }
+}
+
+@media(max-width: 780px) {
+  .contacts-box {
+    flex-direction: column;
+  }
+
+  .map {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contacts-description__box {
+    padding: 0;
+  }
+
+  .contacts-description__box:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 450px) {
+  .map {
+    height: 300px;
+  }
+
+  .contacts-description__text {
+    font-size: 14px;
+}
+}

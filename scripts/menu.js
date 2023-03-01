@@ -1,3 +1,14 @@
+// Вынести в отдельный файл !
+// Функция по избавлению от лишнего текста в заголовках
+const productTitle = document.querySelectorAll('.product-text')
+
+productTitle.forEach(item => {
+  if(item.textContent.trim().length > 50) {
+    item.textContent = item.textContent.slice(0,50) + "..."
+  }
+})
+
+
 const catalogLink = document.querySelector("[data-catalog]")
 const catalog = document.querySelector(".catalog")
 const catalogClose = document.querySelector(".catalog .close")
@@ -29,4 +40,23 @@ buttonOpenSubList.forEach((button, index) => {
 
     subLists[index].classList.add("sublist-end-show")
   })
+})
+
+
+// mobile menu
+
+const mobileMenuClose = document.querySelector(".mobile-menu__close")
+const mobileMenuOpen = document.querySelector(".mobile-menu")
+const header = document.querySelector(".header")
+
+mobileMenuClose.addEventListener("click", () => {
+  header.style.opacity = 0
+  header.style.zIndex = -1
+  document.querySelector("body").style.overflow = ""
+})
+
+mobileMenuOpen.addEventListener("click", () => {
+  header.style.opacity = 1
+  header.style.zIndex = 1
+  document.querySelector("body").style.overflow = "hidden"
 })

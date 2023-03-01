@@ -98,3 +98,41 @@
   font-weight: 300;
   margin-bottom: 50px;
 }
+
+@media(max-width: 1050px) {
+  .main-title {
+    font-size: 40px;
+  }
+
+  .electronic-certificate-pay__online-item-img {
+    width: 600px;
+  }
+}
+
+@media(max-width: 780px) {
+  .electronic-certificate-about {
+    flex-direction: column-reverse;
+  }
+
+  .electronic-certificate-about__title {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .electronic-certificate-pay__online-item-img {
+    width: 300px;
+  }
+
+  .electronic-certificate-about__img {
+    height: 300px;
+  }
+
+  .electronic-certificate-pay__online-item-description {
+    font-size: 13px;
+  }
+
+  .electronic-certificate-pay__office-description {
+    font-size: 14px;
+    text-align: left;
+  }
+}
