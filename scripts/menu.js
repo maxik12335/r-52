@@ -3,8 +3,8 @@
 const productTitle = document.querySelectorAll('.product-text')
 
 productTitle.forEach(item => {
-  if(item.textContent.trim().length > 50) {
-    item.textContent = item.textContent.slice(0,50) + "..."
+  if(item.textContent.trim().length > 70) {
+    item.textContent = item.textContent.slice(0,70) + "..."
   }
 })
 

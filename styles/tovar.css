@@ -220,6 +220,7 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
 .dop-tovar-description__img-box {
   margin-bottom: 20px;
   height: 238px;
+  overflow: hidden;
 }
 
 .dop-tovar-description__img {
@@ -445,6 +446,14 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
   .dop-tovar-description__img {
     height: 150px;
   }
+
+  .dop-tovar-color {
+    height: 190px;
+  }
+
+  .dop-tovar-color .dop-tovar-description__img-box {
+    margin-bottom: 0;
+  }
 }
 
 @media(max-width: 780px) {
@@ -476,7 +485,10 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
 
   .dop-tovar-description__img {
     height: 100px;
+  }
 
+  .dop-tovar-color {
+    height: 140px;
   }
 }
 
