@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../../../styles/main.css">
+  <link rel="stylesheet" href="../../../../../styles/tovar.css">
+  <title>Orliman EV-100/ 200/300</title>
+</head>
+<body>
+  <section class="modal-order">
+    <div class="modal-order__container">
+      <form class="collecting-contacts__form modal-order__form" id="modal-order-form">
+        <div class="close modal-order__close" id="catalog">
+          <span></span>
+          <span></span>
+        </div>
+        <h3 class="modal-order__title">оставить заявку</h3>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-name" name="name" type="text" placeholder="Ваше имя">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-tel" name="tel" type="text" placeholder="Ваш телефон">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-email" name="email" type="text" placeholder="Ваш email">
+          <p class="form-error"></p>
+        </label>
+
+        <button class="collecting-contacts__submit">отправить</button>
+
+        <p class="modal-order-response"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="close" id="catalog">
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="catalog-list">
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Адаптивная одежда</h3>
+        <ul class="catalog-sublist">
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Зимняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/winter/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/winter/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Летняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+         
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/summer/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/summer/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Демисезонная</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/demi-season/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/demi-season/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Детская реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Коляски для детей с ДЦП</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/strollers-dcp/walking/list-products.html">
+                    Прогулочные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/strollers-dcp/domestic/list-products.html">
+                    Домашние
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/chairs-and-armchairs/list-products.html">
+                Стулья и кресла
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/children-orthoses-(S.W.A.S.H.)/list-products.html">
+                Детские ортезы (S.W.A.S.H.)
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/verticalizers/list-products.html">
+                Вертикализаторы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/walkers-and-supports/list-products.html">
+                Ходунки и опоры
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Взрослая реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Инвалидные коляски</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/handicapped-strollers/active/list-products.html">
+                    Активные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/handicapped-strollers/walking/list-products.html">
+                    Прогулочные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/handicapped-strollers/domestic/list-products.html">
+                    Домашние
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Ортезы</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/knee/list-products.html">
+                    Коленные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/ankles/list-products.html">
+                    Голеностопные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/hip/list-products.html">
+                    Тазобедренные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/elbow/list-products.html">
+                    Локтевые
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/radiocarpal/list-products.html">
+                    Лучезапястные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/thoracolumbar/list-products.html">
+                    Грудопоясничные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/shoulder/list-products.html">
+                    Плечевые
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/lumbar-corsets/list-products.html">
+                    Поясничные корсеты
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/neck-collars/list-products.html">
+                    Шейные воротники
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/verticalizers/list-products.html">
+                Вертикализаторы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/functional-beds/list-products.html">
+                Функциональные кровати
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthopedic-mattresses-and-pillows/list-products.html">
+                Ортопедические матрасы и подушки
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/sanitary-armchair-and-chairs/list-products.html">
+                Санитарные кресла, стулья
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/crutches-and-canes-and-walkers/list-products.html">
+                Костыли, трости, ходунки
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Кресло-коляски с электроприводом</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/electric-wheelchairs/list-products.html">
+                Электроколяски
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/folding-beds/list-products.html">
+                Складные кровати
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/all-terrain/list-products.html">
+                Вездеходы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/stepping-stones/list-products.html">
+                Ступенькоходы
+              </a>
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <div class="catalog__shadow"></div>
+  </section>
+
+  <section class="section-title">
+    <div class="container section-title__container">
+      <div class="logo">
+        <img src="../../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+      <p class="label__text">Technologies Rehabilitation</p>
+
+      <div class="section-title__tells">
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+ <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+                <div class="mobile-menu__close">
+          <span></span>
+          <span></span>
+        </div>
+
+        <p class="mobile-menu-title">Technologies Rehabilitation</p>
+
+        <div class="mobile-menu__tells">
+          <a class="mobile-menu__tel" href="tel:+79630293949">+7 (963) 029-39-49</a>
+          <a class="mobile-menu__tel" href="tel:+78005054151">+7 (800) 505-41-51</a>
+          <a class="mobile-menu__tel mobile-menu__mail" href="mailto:9630293949@mail.ru">9630293949@mail.ru</a>
+        </div>
+<ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../../index.html">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#" data-catalog>Каталог</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../offline-page.html">оффлайн магазин</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../compensation.html">Компенсация</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../electronic-certificate.html">Электронные сертификаты</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../contacts.html">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="mobile-adress">
+          <p class="mobile-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+          <p class="mobile-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="tovar">
+        <h2 class="tovar-title">
+          Корсет поясничный Orliman EV-100/ 200/300
+        </h2>
+        
+        <div class="slider">
+          <div class="slider-buttons">
+            <button class="slider-button-left"></button>
+            <button class="slider-button-right"></button>
+          </div>
+          <div class="slide-box">
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-1.jpg" alt="tovar">
+            </div>
+          </div>
+        </div>
+
+        <button class="price">8.990 р</button>
+
+        <h2 class="tovar-subtitle">
+          <span>Корсет полужесткий Orliman EV-100/ 200/300</span> - изготовлен из плотного эластичного материала, который обеспечивает на 50% больше компрессии, чем традиционно используемые изделия. Бесшовная структура избавляет от натирания. Сильная поддержка поясницы, идеально садится на любую фигуру, легкость в использовании и приятный к телу материал. Обеспечивает фиксацию, стабилизацию и разгрузку пояснично- крестцового отдела позвоночника, снижая или устраняя болевые ощущения
+        </h2>
+
+        <p class="tovar-bonus">
+          Выезд специалиста сборка и настройка коляски индивидуально под Вашего ребенка бесплатно
+        </p>
+
+        <p class="tovar-important">
+          Каждому покупателю колясок для детей с ДЦП мы выдадим всю необходимую для предоставления в ФСС документацию. Это позволит вам получить компенсацию финансов, затраченных на приобретение средства передвижения.
+        </p>
+
+        <div class="tovar-description-list">
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Действие
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Обеспечивает фиксацию, стабилизацию и разгрузку пояснично-крестцового отдела позвоночника, снижая или устраняя болевые ощущения
+              </li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Основные преимущества
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Корсет застегивается в два этапа&nbsp;сначала в нижней части, а затем верхними эластичными лентами достигается&nbsp;оптимальная степень фиксации, что обеспечивает дополнительную поддержку,&nbsp;разгрузку позвоночника и снижение болевого синдрома.
+              </li>
+              <li class="tovar-description-list__item">
+                Идеальная посадка&nbsp;на любую фигуру&nbsp; достигается благодаря особой конструкции и дополнительным эластичным ремням. Формируется&nbsp;силуэт талии.
+              </li>
+              <li class="tovar-description-list__item">
+                Конструкция из верхних лент и основного пояса&nbsp;позволяет распределить давление, это&nbsp;предотвращает «эффект жгута»&nbsp;на животе и бочках, что значительно&nbsp;повышает удобство&nbsp;в согнутом и сидячем положениях.
+              </li>
+              <li class="tovar-description-list__item">
+                Удобство в использовании и простота в надевании корсета достигается за 
+                счет:
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">
+                    специальных «парковок» на основном поясе для верхних лент
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    двойной застежке с функцией предварительной фиксации, чтобы с легкостью убирать руку при фиксации основного пояса
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    слотов для пальцев
+                  </li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">
+                Вместо традиционных швов применяется технология ультразвуковой спайки. Совместно с нежнейшим внутренним материалом это обеспечивает комфорт, исключает натирание и позволяет носить корсет на голое тело.
+              </li>
+              <li class="tovar-description-list__item">
+                Корсет практически не заметен под одеждой.
+              </li>
+              <li class="tovar-description-list__item">
+                Приятная телу съемная анатомическая подушечка из вспененного материала обеспечивает лучшее прилегание и сохраняет тепло,&nbsp; что ускоряет кровообращение.
+              </li>
+              <li class="tovar-description-list__item">
+                Задняя часть корсета усилена широкой матрицей с четырьмя гибкими металлическими ребрами, которые подстраиваются под положение тела (сидя, стоя, в движении) и не требуют коррекции
+              </li>
+              <li class="tovar-description-list__item">
+                Ребра расположены веерообразно, что максимально соответствует анатомическому расположению мышц.
+              </li>
+              <li class="tovar-description-list__item">
+                Это обеспечивает постоянную равномерную полужесткую фиксацию и поддерживает пояснично-крестцовый отдел в физиологически выгодном положении (без боли).
+              </li>
+              <li class="tovar-description-list__item">
+                За счет чего расслабляются спазмированные мышцы, уменьшается отечно-болевой синдром и увеличивается объем движений.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Дополниетльные преимущества
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Эластичные ремни подтягивают живот, активизируют тонус глубоких мышц живота, за счет чего восстанавливается внутрибрюшное давление. Органы брюшной полости и малого таза возвращаются в естественное положение.
+              </li>
+              <li class="tovar-description-list__item">
+                Силы воздействия верхней полосы бандажа подходят в случае проблемы отвислого живота
+              </li>
+              <li class="tovar-description-list__item">
+                Эластичная, воздухопроницаемая ткань корсета обеспечивает равномерное распределение компрессии, сохраняет свои свойства после многократных стирок.
+              </li>
+              <li class="tovar-description-list__item">
+                В корсете используются износостойкие и тактильно приятные липучки micro velcro. В отличие от традиционных липучек, они не засоряются и не портят одежду.
+              </li>
+              <li class="tovar-description-list__item">
+                Анатомичные лекала корсета и самоподстраивающиеся ребра предотвращают смещение корсета.
+              </li>
+              <li class="tovar-description-list__item">
+                Подходит в том числе для пациентов с обвисшим животом.
+              </li>
+              <li class="tovar-description-list__item">
+                Возможность подобрать оптимальный корсет пациенту любого роста за счёт двух вариантов высоты сп
+                инки:
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">EV-100/200/300 – высота спинки 26 см</li>
+                  <li class="tovar-description-sublist__item">EV-101/202/301– высота спинки 30 см;</li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">
+                Дополнительные модули расширяют функциональные возможности кор
+                сета:
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">EV-203/303 – грудо-поясничный модуль;</li>
+                  <li class="tovar-description-sublist__item">EVM-100/110 – жесткий пояснично-крестцовый модуль.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Показания к применению поясничного корсета Orliman EV-100/ 200/300
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Выраженный болевой синдром в области поясницы(люмбалгия)&nbsp;
+              </li>
+              <li class="tovar-description-list__item">
+                Протрузии и грыжи мп дисков с болевым синдромом (одиночная более 10 мм/множественные грыжи менее 10 мм)
+              </li>
+              <li class="tovar-description-list__item">
+                Радикулит. Люмбаго (воспаление спинномозгового нерва), Ишиас (воспаление седалищного нерва)
+              </li>
+              <li class="tovar-description-list__item">
+                Спондилолиз и спондилоартроз. Фасеточный синдром
+              </li>
+              <li class="tovar-description-list__item">
+                Сакроилеит (воспаление повздошно-крестцового сочленения)
+              </li>
+              <li class="tovar-description-list__item">
+                Мышечная слабость. Дегенеративно-дистрофические изменения
+              </li>
+              <li class="tovar-description-list__item">
+                Пред и послеоперационная реабилитация
+              </li>
+              <li class="tovar-description-list__item">
+                Дискэктомия (операция на межпозвонковом диске). По рекомендации врача
+              </li>
+              <li class="tovar-description-list__item">
+                Профилактика заболеваний поясничного отдела позвоночника при бытовых и профессиональных нагрузках
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="table-box">
+          <h2 class="table-title">
+            Размеры поясничного корсета Orliman EV-100/ 200/300:
+          </h2>
+
+          <table class="table table-center">
+            <tbody>
+            <tr>
+            <td class="table-category">Размер</td>
+            <td class="table-category">Окружность* (см)</td>
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>63-75</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>75-83</td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>83-91</td>
+            </tr>
+            <tr>
+            <td>4</td>
+            <td>91-99</td>
+            </tr>
+            <tr>
+            <td>5</td>
+            <td>99-107</td>
+            </tr>
+            <tr>
+            <td>6</td>
+            <td>107-115</td>
+            </tr>
+            <tr>
+            <td>7</td>
+            <td>115-123</td>
+            </tr>
+            <tr>
+            <td>8</td>
+            <td>123-135</td>
+            </tr>
+            <tr>
+            <td>9</td>
+            <td>135-145</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <section class="collecting-contacts">
+          <div class="container collecting-contacts__container">
+            <h1 class="collecting-contacts__title">
+              Обеспечим техническими средствами реабилитации по электронным сертификатам
+            </h1>
+      
+            <h2 class="collecting-contacts__form-title">остались вопросы ?</h2>
+            <p class="collecting-contacts__form-subtitle">
+              Оставьте контакты и мы скоро свяжемся с вами
+            </p>
+      
+            <form class="collecting-contacts__form" id="form-question">
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-name" type="text" placeholder="Ваше имя">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-tel" type="text" placeholder="Ваш телефон">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-email" type="text" placeholder="Ваш email">
+                <p class="form-error form-error-black"></p>
+              </label>
+      
+              <button class="collecting-contacts__submit">оставить заявку</button>
+
+              <p class="form-question-response"></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="logo">
+        <img src="../../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+
+      <div class="footer-adress">
+        <p class="footer-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+        <p class="footer-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+      </div>
+
+      <div class="contacts-links">
+        <a class="contacts-links__item" href="mailto:9630293949@mail.ru">9630293949@mail.ru</a>
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <section class="footer-pay">
+    <div class="container">
+      <img class="footer-pay__img" src="../../../../../images/footer-pay.png" alt="pay">
+    </div>
+  </section>
+
+  <script src="../../../../../jquery/jquery-3.6.3.min.js"></script>
+  <script src="../../../../../jquery/jquery.maskedinput.min.js"></script>
+  <script src="../../../../../scripts/menu.js"></script>
+  <script src="../../../../../scripts/slider.js"></script>
+  <script src="../../../../../scripts/productFormOrder.js"></script>
+  <script src="../../../../../scripts/productFormQuestion.js"></script>
+  <script>
+   
+  </script>
+</body>
+</html>

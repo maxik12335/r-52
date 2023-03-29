@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../../../styles/main.css">
+  <link rel="stylesheet" href="../../../../../styles/tovar.css">
+  <title>Orliman TP-6401</title>
+</head>
+<body>
+  <section class="modal-order">
+    <div class="modal-order__container">
+      <form class="collecting-contacts__form modal-order__form" id="modal-order-form">
+        <div class="close modal-order__close" id="catalog">
+          <span></span>
+          <span></span>
+        </div>
+        <h3 class="modal-order__title">оставить заявку</h3>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-name" name="name" type="text" placeholder="Ваше имя">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-tel" name="tel" type="text" placeholder="Ваш телефон">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-email" name="email" type="text" placeholder="Ваш email">
+          <p class="form-error"></p>
+        </label>
+
+        <button class="collecting-contacts__submit">отправить</button>
+
+        <p class="modal-order-response"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="close" id="catalog">
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="catalog-list">
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Адаптивная одежда</h3>
+        <ul class="catalog-sublist">
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Зимняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/winter/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/winter/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Летняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+         
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/summer/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/summer/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Демисезонная</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/demi-season/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../../pages/adaptive-clothing/demi-season/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Детская реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Коляски для детей с ДЦП</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/strollers-dcp/walking/list-products.html">
+                    Прогулочные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/strollers-dcp/domestic/list-products.html">
+                    Домашние
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/chairs-and-armchairs/list-products.html">
+                Стулья и кресла
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/children-orthoses-(S.W.A.S.H.)/list-products.html">
+                Детские ортезы (S.W.A.S.H.)
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/verticalizers/list-products.html">
+                Вертикализаторы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/children-rehabilitation/walkers-and-supports/list-products.html">
+                Ходунки и опоры
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Взрослая реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Инвалидные коляски</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/handicapped-strollers/active/list-products.html">
+                    Активные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/handicapped-strollers/walking/list-products.html">
+                    Прогулочные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/handicapped-strollers/domestic/list-products.html">
+                    Домашние
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Ортезы</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/knee/list-products.html">
+                    Коленные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/ankles/list-products.html">
+                    Голеностопные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/hip/list-products.html">
+                    Тазобедренные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/elbow/list-products.html">
+                    Локтевые
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/radiocarpal/list-products.html">
+                    Лучезапястные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/thoracolumbar/list-products.html">
+                    Грудопоясничные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/shoulder/list-products.html">
+                    Плечевые
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/lumbar-corsets/list-products.html">
+                    Поясничные корсеты
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthoses/neck-collars/list-products.html">
+                    Шейные воротники
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/verticalizers/list-products.html">
+                Вертикализаторы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/functional-beds/list-products.html">
+                Функциональные кровати
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/orthopedic-mattresses-and-pillows/list-products.html">
+                Ортопедические матрасы и подушки
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/sanitary-armchair-and-chairs/list-products.html">
+                Санитарные кресла, стулья
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/adult-rehabilitation/crutches-and-canes-and-walkers/list-products.html">
+                Костыли, трости, ходунки
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Кресло-коляски с электроприводом</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/electric-wheelchairs/list-products.html">
+                Электроколяски
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/folding-beds/list-products.html">
+                Складные кровати
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/all-terrain/list-products.html">
+                Вездеходы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../../pages/wheelchairs-electric-drive/stepping-stones/list-products.html">
+                Ступенькоходы
+              </a>
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <div class="catalog__shadow"></div>
+  </section>
+
+  <section class="section-title">
+    <div class="container section-title__container">
+      <div class="logo">
+        <img src="../../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+      <p class="label__text">Technologies Rehabilitation</p>
+
+      <div class="section-title__tells">
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+ <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+                <div class="mobile-menu__close">
+          <span></span>
+          <span></span>
+        </div>
+
+        <p class="mobile-menu-title">Technologies Rehabilitation</p>
+
+        <div class="mobile-menu__tells">
+          <a class="mobile-menu__tel" href="tel:+79630293949">+7 (963) 029-39-49</a>
+          <a class="mobile-menu__tel" href="tel:+78005054151">+7 (800) 505-41-51</a>
+          <a class="mobile-menu__tel mobile-menu__mail" href="mailto:9630293949@mail.ru">9630293949@mail.ru</a>
+        </div>
+<ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../../index.html">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#" data-catalog>Каталог</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../offline-page.html">оффлайн магазин</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../compensation.html">Компенсация</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../electronic-certificate.html">Электронные сертификаты</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../contacts.html">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="mobile-adress">
+          <p class="mobile-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+          <p class="mobile-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="tovar">
+        <h2 class="tovar-title">
+          Ортез на плечевой сустав из термопластика Orliman TP-6401
+        </h2>
+        
+        <div class="slider">
+          <div class="slider-buttons">
+            <button class="slider-button-left"></button>
+            <button class="slider-button-right"></button>
+          </div>
+          <div class="slide-box">
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-1.jpg" alt="tovar">
+            </div>
+          </div>
+        </div>
+
+        <button class="price">9.450 р</button>
+
+        <h2 class="tovar-subtitle">
+          <span>Плечевой ортез Orliman TP-6401</span> - из термоформируемого пластика (полиэтилена низкой плотности), покрытый мягкой тканью. Внутренняя воздухопроницаемая подкладка из ажурного материала. Две части ортеза с термопластиковыми пластинами имеют тканевое покрытие и соединяются друг с другом с помощью регулируемых велюровых ремешков с застежками Велькро. Фиксация ортеза на теле пациента осуществляется посредством нагрудного регулируемого ремня
+        </h2>
+
+        <p class="tovar-bonus">
+          Выезд специалиста сборка и настройка коляски индивидуально под Вашего ребенка бесплатно
+        </p>
+
+        <p class="tovar-important">
+          Каждому покупателю колясок для детей с ДЦП мы выдадим всю необходимую для предоставления в ФСС документацию. Это позволит вам получить компенсацию финансов, затраченных на приобретение средства передвижения.
+        </p>
+
+        <div class="tovar-description-list">
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Особенности отреза плечевого Orliman TP-6401
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Ортез состоит из двух частей, выполненных из термопластика, покрытых воздухопроницаемой мягкой тканью
+              </li>
+              <li class="tovar-description-list__item">
+                Конструкция ортеза позволяет пациенту пользоваться поврежденной рукой, постепенно увеличивая нагрузку
+              </li>
+              <li class="tovar-description-list__item">
+                Регулировка выполняется с помощью двух ремней из велюра и застежки velcro
+              </li>
+              <li class="tovar-description-list__item">
+                Не оказывает чрезмерного давления в подмышечной области, не причиняет дискомфорт при ношении
+              </li>
+              <li class="tovar-description-list__item">
+                Ортез охватывает область плеча на 2,5 см выше плечевого надмыщелка, не раздражает область сустава
+              </li>
+              <li class="tovar-description-list__item">
+                Поставляется с ремнем для поддержки предплечья для профилактики перегрузки области надплечья
+              </li>
+              <li class="tovar-description-list__item">
+                Билатеральная конструкция: можно использовать как на левую, так и на правую руку
+              </li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Показания к применению отреза плечевого Orliman TP-6401
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Переломы проксимального отдела плечевой&nbsp;кости
+              </li>
+              <li class="tovar-description-list__item">
+                Послеоперационное лечение переломов
+              </li>
+              <li class="tovar-description-list__item">
+                Контроль нестабильности во время реабилитации
+              </li>
+              <li class="tovar-description-list__item">
+                Реабилитация после повреждений мягких&nbsp;тканей вращательной манжеты плеча
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="table-box">
+          <h2 class="table-title">
+            Размеры отреза плечевого Orliman TP-6401
+          </h2>
+
+          <table class="table table-center">
+            <tbody>
+            <tr>
+            <td class="table-category">Размер</td>
+            <td class="table-category">Длина, см&nbsp;</td>
+            <td class="table-category">Обхват на 12 см выше локтевого сгиба,см</td>
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>27.5</td>
+            <td>22.5-26</td>
+            </tr>
+            <tr>
+            <td >2</td>
+            <td >29.5</td>
+            <td >26-29.5</td>
+            </tr>
+            <tr>
+            <td >3</td>
+            <td >32</td>
+            <td >29.5-33</td>
+            </tr>
+            <tr>
+            <td >4</td>
+            <td >33</td>
+            <td >33-36.5</td>
+            </tr>
+            <tr>
+            <td >5</td>
+            <td >35</td>
+            <td >36.5-40</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <section class="collecting-contacts">
+          <div class="container collecting-contacts__container">
+            <h1 class="collecting-contacts__title">
+              Обеспечим техническими средствами реабилитации по электронным сертификатам
+            </h1>
+      
+            <h2 class="collecting-contacts__form-title">остались вопросы ?</h2>
+            <p class="collecting-contacts__form-subtitle">
+              Оставьте контакты и мы скоро свяжемся с вами
+            </p>
+      
+            <form class="collecting-contacts__form" id="form-question">
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-name" type="text" placeholder="Ваше имя">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-tel" type="text" placeholder="Ваш телефон">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-email" type="text" placeholder="Ваш email">
+                <p class="form-error form-error-black"></p>
+              </label>
+      
+              <button class="collecting-contacts__submit">оставить заявку</button>
+
+              <p class="form-question-response"></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="logo">
+        <img src="../../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+
+      <div class="footer-adress">
+        <p class="footer-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+        <p class="footer-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+      </div>
+
+      <div class="contacts-links">
+        <a class="contacts-links__item" href="mailto:9630293949@mail.ru">9630293949@mail.ru</a>
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <section class="footer-pay">
+    <div class="container">
+      <img class="footer-pay__img" src="../../../../../images/footer-pay.png" alt="pay">
+    </div>
+  </section>
+
+  <script src="../../../../../jquery/jquery-3.6.3.min.js"></script>
+  <script src="../../../../../jquery/jquery.maskedinput.min.js"></script>
+  <script src="../../../../../scripts/menu.js"></script>
+  <script src="../../../../../scripts/slider.js"></script>
+  <script src="../../../../../scripts/productFormOrder.js"></script>
+  <script src="../../../../../scripts/productFormQuestion.js"></script>
+  <script>
+   
+  </script>
+</body>
+</html>
