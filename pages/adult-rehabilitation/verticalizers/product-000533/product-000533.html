@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../../styles/main.css">
+  <link rel="stylesheet" href="../../../../styles/tovar.css">
+  <title>Akcesmed Парапион</title>
+</head>
+<body>
+  <section class="modal-order">
+    <div class="modal-order__container">
+      <form class="collecting-contacts__form modal-order__form" id="modal-order-form">
+        <div class="close modal-order__close" id="catalog">
+          <span></span>
+          <span></span>
+        </div>
+        <h3 class="modal-order__title">оставить заявку</h3>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-name" name="name" type="text" placeholder="Ваше имя">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-tel" name="tel" type="text" placeholder="Ваш телефон">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-email" name="email" type="text" placeholder="Ваш email">
+          <p class="form-error"></p>
+        </label>
+
+        <button class="collecting-contacts__submit">отправить</button>
+
+        <p class="modal-order-response"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="close" id="catalog">
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="catalog-list">
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Адаптивная одежда</h3>
+        <ul class="catalog-sublist">
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Зимняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clothing/winter/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clothing/winter/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Летняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+         
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clothing/summer/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clothing/summer/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Демисезонная</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clothing/demi-season/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clothing/demi-season/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Детская реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Коляски для детей с ДЦП</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/strollers-dcp/walking/list-products.html">
+                    Прогулочные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/strollers-dcp/domestic/list-products.html">
+                    Домашние
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/chairs-and-armchairs/list-products.html">
+                Стулья и кресла
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/children-orthoses-(S.W.A.S.H.)/list-products.html">
+                Детские ортезы (S.W.A.S.H.)
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/verticalizers/list-products.html">
+                Вертикализаторы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/walkers-and-supports/list-products.html">
+                Ходунки и опоры
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Взрослая реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Инвалидные коляски</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/handicapped-strollers/active/list-products.html">
+                    Активные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/handicapped-strollers/walking/list-products.html">
+                    Прогулочные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/handicapped-strollers/domestic/list-products.html">
+                    Домашние
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Ортезы</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/orthoses/knee/list-products.html">
+                    Коленные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/orthoses/ankles/list-products.html">
+                    Голеностопные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/orthoses/hip/list-products.html">
+                    Тазобедренные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/orthoses/elbow/list-products.html">
+                    Локтевые
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/orthoses/radiocarpal/list-products.html">
+                    Лучезапястные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/orthoses/thoracolumbar/list-products.html">
+                    Грудопоясничные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/orthoses/shoulder/list-products.html">
+                    Плечевые
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/orthoses/lumbar-corsets/list-products.html">
+                    Поясничные корсеты
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/orthoses/neck-collars/list-products.html">
+                    Шейные воротники
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/verticalizers/list-products.html">
+                Вертикализаторы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/functional-beds/list-products.html">
+                Функциональные кровати
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/orthopedic-mattresses-and-pillows/list-products.html">
+                Ортопедические матрасы и подушки
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/sanitary-armchair-and-chairs/list-products.html">
+                Санитарные кресла, стулья
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/crutches-and-canes-and-walkers/list-products.html">
+                Костыли, трости, ходунки
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Кресло-коляски с электроприводом</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/wheelchairs-electric-drive/electric-wheelchairs/list-products.html">
+                Электроколяски
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/wheelchairs-electric-drive/folding-beds/list-products.html">
+                Складные кровати
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/wheelchairs-electric-drive/all-terrain/list-products.html">
+                Вездеходы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/wheelchairs-electric-drive/stepping-stones/list-products.html">
+                Ступенькоходы
+              </a>
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <div class="catalog__shadow"></div>
+  </section>
+
+  <section class="section-title">
+    <div class="container section-title__container">
+      <div class="logo">
+        <img src="../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+      <p class="label__text">Technologies Rehabilitation</p>
+
+      <div class="section-title__tells">
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+ <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+                <div class="mobile-menu__close">
+          <span></span>
+          <span></span>
+        </div>
+
+        <p class="mobile-menu-title">Technologies Rehabilitation</p>
+
+        <div class="mobile-menu__tells">
+          <a class="mobile-menu__tel" href="tel:+79630293949">+7 (963) 029-39-49</a>
+          <a class="mobile-menu__tel" href="tel:+78005054151">+7 (800) 505-41-51</a>
+          <a class="mobile-menu__tel mobile-menu__mail" href="mailto:9630293949@mail.ru">9630293949@mail.ru</a>
+        </div>
+<ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../index.html">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#" data-catalog>Каталог</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../offline-page.html">оффлайн магазин</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../compensation.html">Компенсация</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../electronic-certificate.html">Электронные сертификаты</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../contacts.html">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="mobile-adress">
+          <p class="mobile-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+          <p class="mobile-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="tovar">
+        <h2 class="tovar-title">
+          Статический вертикализатор Akcesmed Парапион
+        </h2>
+        
+        <div class="slider">
+          <div class="slider-buttons">
+            <button class="slider-button-left"></button>
+            <button class="slider-button-right"></button>
+          </div>
+          <div class="slide-box">
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-1.jpg" alt="tovar">
+            </div>
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-2.jpg" alt="tovar">
+            </div>
+          </div>
+        </div>
+
+        <button class="price">172.644 р</button>
+
+        <h2 class="tovar-subtitle">
+          <span>Статический вертикализатор Akcesmed Парапион</span> - предназначен для пассивной вертикализации пациента. Во время этого процесса происходит адаптация чувства равновесия, внутренних органов и кровеносной системы к новым условиям и большим нагрузкам. Находясь в устройстве пациент может заниматься по дому или работать. Система ремней и подушек сконструирована так, чтобы пациент чувствовал себя уверенно, в безопасности, а вместе с тем свободно, не стесненным. В вертикализаторе установлены поворотные колеса, позволяющие перевозить пациента из палаты на коридор, в другое помещение или наружу в стоячем положении
+        </h2>
+
+        <p class="tovar-bonus">
+          Выезд специалиста сборка и настройка коляски индивидуально под Вашего ребенка бесплатно
+        </p>
+        
+        <p class="tovar-important">
+          Каждому покупателю колясок для детей с ДЦП мы выдадим всю необходимую для предоставления в ФСС документацию. Это позволит вам получить компенсацию финансов, затраченных на приобретение средства передвижения.
+        </p>
+
+        <div class="tovar-description-list">
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Статистический вертикализатор Парапион рекомендуется для детей и подростков с диагнозом
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">Детский церебральный паралич – различные формы.</li>
+              <li class="tovar-description-list__item">Расщепление позвоночника.</li>
+              <li class="tovar-description-list__item">Повреждения головного и спинного мозга – различной этиологии.</li>
+              <li class="tovar-description-list__item">Демиелинизирующие заболевания (рассеянный склероз, боковой амиотрофический склероз и др.).</li>
+              <li class="tovar-description-list__item">Заболевания мышц, протекающие с парезами и параличом.</li>
+              <li class="tovar-description-list__item">Генетические синдромы, протекающие с парезами конечностей.</li>
+              <li class="tovar-description-list__item">Ревматические заболевания.</li>
+              <li class="tovar-description-list__item">После черепномозговой травмы, травмы позвоночника, спинного мозга и нижних конечностей.</li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Стандартная комплектация статического вертикализатора Akcesmed Парапион
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">
+                Грудная обойма
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">
+                    - Регулируемая высота и обхват
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Широкая и мягкая, отлично стабилизирует
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Застегивается широкой липучкой и ремнями с пряжкой, что повышает безопасность использования
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Легко дезинфицировать и содержать в чистоте
+                  </li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">
+                Столик
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">
+                    - Стандартное оборудование в размере 1
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - В размерах 2 и 3, стол доступен как дополнительное оборудование
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - В размере 1 стол дополнительно снабжен съемной тарелкой
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Столешница из МДФ, которая очень прочная и ее легко содержать в чистоте
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Стол размером 2 и 3 изготовлен из фанеры
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Регулируется по высоте и глубине
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Под столешницей есть ручки, которые облегчают вход в вертикализатор, например, из коляски
+                  </li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">
+                Бедренная обойма
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">
+                    - Регулируемая высота и обхват
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Широкая и мягкая, отлично стабилизирует
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Застегивается широкой липучкой и ремнями с пряжкой, что повышает безопасность использования
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Легко дезинфицировать и содержать в чистоте
+                  </li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">
+                Стабилизатор колен с пелотами
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">
+                    - Мягкий, застегивается сзади на липучке
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Регулируется по высоте, глубине и ширине
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Как вариант, возможность самостоятельной регулировки каждого колена в отдельности
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Покрыт легко моющимся материалом
+                  </li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">
+                Рама с колесами с тормозами
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">
+                    - Сильная, стабильная база
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - 4 торсионных колеса с тормозами
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Основная часть покрыта краской устойчивой к истиранию
+                  </li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">
+                Платформа со стабилизатором стоп
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">
+                    - Ножки изготовлены из нескользящего материала
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Регулировка высоты платформы по высоте с возможностью демонтирования
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Возможность отводить и свободить стопы
+                  </li>
+                  <li class="tovar-description-sublist__item">
+                    - Прочные ремни на липучке прекрасно стабилизируют ноги
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tovar-description tovar-description-shadow-none ">
+          <h3 class="tovar-description__list-title tovar-description__list-title-dop">
+            БЕЗОПАСНОСТЬ
+          </h3>
+
+          <ul class="dop-tovar-description__list">
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-1.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">
+                PPN_002 Ремень для переноски больных AM-P
+              </p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-2.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">
+                PPN_015/016/020 Колесо Танго
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tovar-description tovar-description-shadow-none ">
+          <h3 class="tovar-description__list-title tovar-description__list-title-dop">
+            СТАБИЛИЗАЦИЯ
+          </h3>
+
+          <ul class="dop-tovar-description__list">
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-3.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">
+                PPN_111 Независимо регулируемые стабилизаторы колен (Z)
+              </p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-4.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">
+                PPN_116 Удлиненный грудной или бедренный ремень
+              </p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-5.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">
+                PPN_112 Подлокотники с рукоятками (2 шт.)
+              </p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-6.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">
+                PPN_140 Подпорки под подмышки высокие (2 шт.)
+              </p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-7.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">
+                PPN_157 Жесткая грудная обойма
+              </p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-8.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">
+                PPN_158 Жесткая бедренна обойм
+              </p>
+            </li>
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-9.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">
+                PPN_159 Удлинённый грудной ремень
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tovar-description tovar-description-shadow-none ">
+          <h3 class="tovar-description__list-title tovar-description__list-title-dop">
+            КОМФОРТ
+          </h3>
+
+          <ul class="dop-tovar-description__list">
+            <li class="dop-tovar-description__list-item">
+              <div class="dop-tovar-description__img-box">
+                <img src="img/dop/dop-10.jpg" alt="" class="dop-tovar-description__img">
+              </div>
+              <p class="dop-tovar-description__item-title">
+                PPN_403 Столик
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="table-box">
+          <h2 class="table-title">
+            Таблица размеров вертикализатора Akcesmed Парапион:
+          </h2>
+
+          <table class="table">
+            <tbody>
+            <tr>
+            <td class="table-category">Символ</td>
+            <td class="table-category">Размер</td>
+            <td class="table-category">Ед.</td>
+            <td class="table-category">Размер 1</td>
+            <td class="table-category">Размер&nbsp;2</td>
+            <td class="table-category">Размер&nbsp;3</td>
+            </tr>
+            <tr>
+            <td style="width: 96px; text-align: center;"><strong>W</strong></td>
+            <td style="width: 512px;">Приближенный&nbsp;&nbsp;рост&nbsp;пациента*</td>
+            <td style="width: 16px; text-align: center;">[см]</td>
+            <td style="text-align: center; width: 145px;">90-140</td>
+            <td style="text-align: center; width: 111px;">110-170</td>
+            <td style="text-align: center; width: 139px;">140-200</td>
+            </tr>
+            <tr>
+            <td style="width: 96px; text-align: center;"><strong>A/A1</strong></td>
+            <td style="width: 512px;">Ширина между бедренными/грудных&nbsp;пелотами</td>
+            <td style="width: 16px; text-align: center;">[см]</td>
+            <td style="text-align: center; width: 145px;">23</td>
+            <td style="text-align: center; width: 111px;">31</td>
+            <td style="text-align: center; width: 139px;">38</td>
+            </tr>
+            <tr>
+            <td style="width: 96px; text-align: center;"><strong>C</strong></td>
+            <td style="width: 512px;">Регуляция&nbsp;высоты&nbsp;бедренных&nbsp;пелот</td>
+            <td style="width: 16px; text-align: center;">[см]</td>
+            <td style="text-align: center; width: 145px;">61-90</td>
+            <td style="text-align: center; width: 111px;">80-104</td>
+            <td style="text-align: center; width: 139px;">92-122</td>
+            </tr>
+            <tr>
+            <td style="width: 96px; text-align: center;"><strong>C1</strong></td>
+            <td style="width: 512px;">Регуляция&nbsp;высоты&nbsp;грудных&nbsp;пелот</td>
+            <td style="width: 16px; text-align: center;">[см]</td>
+            <td style="text-align: center; width: 145px;">73-111</td>
+            <td style="text-align: center; width: 111px;">92-126</td>
+            <td style="text-align: center; width: 139px;">107-163</td>
+            </tr>
+            <tr>
+            <td style="width: 96px; text-align: center;">&nbsp;</td>
+            <td style="width: 512px;">Окружность бедренной пелоты</td>
+            <td style="width: 16px; text-align: center;">[см]</td>
+            <td style="text-align: center; width: 145px;">56-76</td>
+            <td style="text-align: center; width: 111px;">80-102</td>
+            <td style="text-align: center; width: 139px;">95-124</td>
+            </tr>
+            <tr>
+            <td style="width: 96px; text-align: center;">G</td>
+            <td style="width: 512px;">Расстояние между коленными пелотами</td>
+            <td style="width: 16px; text-align: center;">[см]</td>
+            <td style="text-align: center; width: 145px;">12-22</td>
+            <td style="text-align: center; width: 111px;">16-24</td>
+            <td style="text-align: center; width: 139px;">20-31</td>
+            </tr>
+            <tr>
+            <td style="width: 96px; text-align: center;">H</td>
+            <td style="width: 512px;">Высота коленных пелот</td>
+            <td style="width: 16px; text-align: center;">[см]</td>
+            <td style="text-align: center; width: 145px;">18-45</td>
+            <td style="text-align: center; width: 111px;">24-49</td>
+            <td style="text-align: center; width: 139px;">31-70</td>
+            </tr>
+            <tr>
+            <td style="width: 96px; text-align: center;">I</td>
+            <td style="width: 512px;">Длина ступни</td>
+            <td style="width: 16px; text-align: center;">[см]</td>
+            <td style="text-align: center; width: 145px;">20</td>
+            <td style="text-align: center; width: 111px;">27</td>
+            <td style="text-align: center; width: 139px;">30</td>
+            </tr>
+            <tr>
+            <td style="width: 96px; text-align: center;">&nbsp;</td>
+            <td style="width: 512px;">Максимальный вес пациента</td>
+            <td style="width: 16px; text-align: center;">[кг]</td>
+            <td style="text-align: center; width: 145px;">30</td>
+            <td style="text-align: center; width: 111px;">55</td>
+            <td style="text-align: center; width: 139px;">95</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <div class="table-box">
+          <h2 class="table-title">
+            Габариты и вес статического вертикализатора Akcesmed Парапион
+          </h2>
+
+          <table class="table">
+            <tbody>
+            <tr>
+            <td class="table-category">Размер</td>
+            <td class="table-category">Ширина [см]</td>
+            <td class="table-category">Длина [см]</td>
+            <td class="table-category">Высота [см]</td>
+            <td class="table-category">Вес [кг]</td>
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>56</td>
+            <td>75</td>
+            <td>73</td>
+            <td>17</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>56</td>
+            <td>87</td>
+            <td>92</td>
+            <td>21,5</td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>67</td>
+            <td>93</td>
+            <td>107</td>
+            <td>25,5</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <section class="collecting-contacts">
+          <div class="container collecting-contacts__container">
+            <h1 class="collecting-contacts__title">
+              Обеспечим техническими средствами реабилитации по электронным сертификатам
+            </h1>
+      
+            <h2 class="collecting-contacts__form-title">остались вопросы ?</h2>
+            <p class="collecting-contacts__form-subtitle">
+              Оставьте контакты и мы скоро свяжемся с вами
+            </p>
+      
+            <form class="collecting-contacts__form" id="form-question">
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-name" type="text" placeholder="Ваше имя">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-tel" type="text" placeholder="Ваш телефон">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-email" type="text" placeholder="Ваш email">
+                <p class="form-error form-error-black"></p>
+              </label>
+      
+              <button class="collecting-contacts__submit">оставить заявку</button>
+
+              <p class="form-question-response"></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="logo">
+        <img src="../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+
+      <div class="footer-adress">
+        <p class="footer-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+        <p class="footer-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+      </div>
+
+      <div class="contacts-links">
+        <a class="contacts-links__item" href="mailto:9630293949@mail.ru">9630293949@mail.ru</a>
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <section class="footer-pay">
+    <div class="container">
+      <img class="footer-pay__img" src="../../../../images/footer-pay.png" alt="pay">
+    </div>
+  </section>
+
+  <script src="../../../../jquery/jquery-3.6.3.min.js"></script>
+  <script src="../../../../jquery/jquery.maskedinput.min.js"></script>
+  <script src="../../../../scripts/menu.js"></script>
+  <script src="../../../../scripts/slider.js"></script>
+  <script src="../../../../scripts/productFormOrder.js"></script>
+  <script src="../../../../scripts/productFormQuestion.js"></script>
+  <script>
+   
+  </script>
+</body>
+</html>

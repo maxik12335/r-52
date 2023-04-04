@@ -296,6 +296,10 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
 }
 
+.table-mb {
+  margin-bottom: 50px;
+}
+
 .table td {
   border: 1px solid #f4e7e7;
   padding: 10px;
