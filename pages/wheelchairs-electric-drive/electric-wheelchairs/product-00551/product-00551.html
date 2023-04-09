@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../../styles/main.css">
+  <link rel="stylesheet" href="../../../../styles/tovar.css">
+  <title>Meyra iChair MC2</title>
+</head>
+<body>
+  <section class="modal-order">
+    <div class="modal-order__container">
+      <form class="collecting-contacts__form modal-order__form" id="modal-order-form">
+        <div class="close modal-order__close" id="catalog">
+          <span></span>
+          <span></span>
+        </div>
+        <h3 class="modal-order__title">оставить заявку</h3>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-name" name="name" type="text" placeholder="Ваше имя">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-tel" name="tel" type="text" placeholder="Ваш телефон">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-email" name="email" type="text" placeholder="Ваш email">
+          <p class="form-error"></p>
+        </label>
+
+        <button class="collecting-contacts__submit">отправить</button>
+
+        <p class="modal-order-response"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="close" id="catalog">
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="catalog-list">
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Адаптивная одежда</h3>
+        <ul class="catalog-sublist">
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Зимняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clotding/winter/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clotding/winter/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Летняя</div>
+              <div class="catalog-list__button"></div>
+            </div>
+         
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clotding/summer/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clotding/summer/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-list__item">
+            <div class="catalog-box-item">
+              <div>Демисезонная</div>
+              <div class="catalog-list__button"></div>
+            </div>
+
+            <ul class="catalog-sublist sublist-end">
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clotding/demi-season/children/list-products.html">
+                  Детская
+                </a>
+              </li>
+              <li class="catalog-list__item">
+                <a class="catalog-list__link" href="../../../../pages/adaptive-clotding/demi-season/adult/list-products.html">
+                  Взрослая
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Детская реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Коляски для детей с ДЦП</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/strollers-dcp/walking/list-products.html">
+                    Прогулочные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/strollers-dcp/domestic/list-products.html">
+                    Домашние
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/chairs-and-armchairs/list-products.html">
+                Стулья и кресла
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/children-ortdoses-(S.W.A.S.H.)/list-products.html">
+                Детские ортезы (S.W.A.S.H.)
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/verticalizers/list-products.html">
+                Вертикализаторы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/children-rehabilitation/walkers-and-supports/list-products.html">
+                Ходунки и опоры
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Взрослая реабилитация</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Инвалидные коляски</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/handicapped-strollers/active/list-products.html">
+                    Активные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/handicapped-strollers/walking/list-products.html">
+                    Прогулочные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/handicapped-strollers/domestic/list-products.html">
+                    Домашние
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <div class="catalog-box-item">
+                <div>Ортезы</div>
+                <div class="catalog-list__button"></div>
+              </div>
+
+              <ul class="catalog-sublist sublist-end">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/ortdoses/knee/list-products.html">
+                    Коленные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/ortdoses/ankles/list-products.html">
+                    Голеностопные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/ortdoses/hip/list-products.html">
+                    Тазобедренные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/ortdoses/elbow/list-products.html">
+                    Локтевые
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/ortdoses/radiocarpal/list-products.html">
+                    Лучезапястные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/ortdoses/tdoracolumbar/list-products.html">
+                    Грудопоясничные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/ortdoses/shoulder/list-products.html">
+                    Плечевые
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/ortdoses/lumbar-corsets/list-products.html">
+                    Поясничные корсеты
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/ortdoses/neck-collars/list-products.html">
+                    Шейные воротники
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/verticalizers/list-products.html">
+                Вертикализаторы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/functional-beds/list-products.html">
+                Функциональные кровати
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/ortdopedic-mattresses-and-pillows/list-products.html">
+                Ортопедические матрасы и подушки
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/sanitary-armchair-and-chairs/list-products.html">
+                Санитарные кресла, стулья
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/adult-rehabilitation/crutches-and-canes-and-walkers/list-products.html">
+                Костыли, трости, ходунки
+              </a>
+            </li>
+          </ul>
+      </li>
+      <li class="catalog-list__item">
+        <h3 class="catalog-list__title">Кресло-коляски с электроприводом</h3>
+           <ul class="catalog-sublist">
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/wheelchairs-electric-drive/electric-wheelchairs/list-products.html">
+                Электроколяски
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/wheelchairs-electric-drive/folding-beds/list-products.html">
+                Складные кровати
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/wheelchairs-electric-drive/all-terrain/list-products.html">
+                Вездеходы
+              </a>
+            </li>
+            <li class="catalog-list__item">
+              <a class="catalog-list__link" href="../../../../pages/wheelchairs-electric-drive/stepping-stones/list-products.html">
+                Ступенькоходы
+              </a>
+            </li>
+          </ul>
+      </li>
+    </ul>
+    <div class="catalog__shadow"></div>
+  </section>
+
+  <section class="section-title">
+    <div class="container section-title__container">
+      <div class="logo">
+        <img src="../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+      <p class="label__text">Technologies Rehabilitation</p>
+
+      <div class="section-title__tells">
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+ <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+                <div class="mobile-menu__close">
+          <span></span>
+          <span></span>
+        </div>
+
+        <p class="mobile-menu-title">Technologies Rehabilitation</p>
+
+        <div class="mobile-menu__tells">
+          <a class="mobile-menu__tel" href="tel:+79630293949">+7 (963) 029-39-49</a>
+          <a class="mobile-menu__tel" href="tel:+78005054151">+7 (800) 505-41-51</a>
+          <a class="mobile-menu__tel mobile-menu__mail" href="mailto:9630293949@mail.ru">9630293949@mail.ru</a>
+        </div>
+<ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../index.html">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#" data-catalog>Каталог</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../pages/offline-page.html">оффлайн магазин</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../pages/compensation.html">Компенсация</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../pages/electronic-certificate.html">Электронные сертификаты</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="../../../../pages/contacts.html">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="mobile-adress">
+          <p class="mobile-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+          <p class="mobile-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="tovar">
+        <h2 class="tovar-title">
+          Инвалидная коляска с электроприводом Meyra iChair MC2
+        </h2>
+        
+        <div class="slider">
+          <div class="slider-buttons">
+            <button class="slider-button-left"></button>
+            <button class="slider-button-right"></button>
+          </div>
+          <div class="slide-box">
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-1.jpg" alt="tovar">
+            </div>
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-2.jpg" alt="tovar">
+            </div>
+            <div class="slider-item">
+              <img class="tovar-img" src="img/slider/slider-3.jpg" alt="tovar">
+            </div>
+          </div>
+        </div>
+
+        <button class="price">425.000 р</button>
+
+        <h2 class="tovar-subtitle">
+          <span>Инвалидная коляска с электроприводом Meyra iChair MC2</span> - многофункциональная модель повышенного комфорта. Яркий эргономичный дизайн и умеренные габаритные размеры позволяют использовать коляску как в домашних условиях, так и на прогулках. Широкий набор регулировок обеспечивает максимальную адаптацию к физиологическим особенностям пользователя. Новая, быстрая электрическая коляска, для комнатного и внедорожного использования, впечатляет своими сложными функциями и свежим дизайном
+        </h2>
+
+        <p class="tovar-bonus">
+          Выезд специалиста сборка и настройка коляски индивидуально под Вашего ребенка бесплатно
+        </p>
+        
+        <p class="tovar-important">
+          Каждому покупателю колясок для детей с ДЦП мы выдадим всю необходимую для предоставления в ФСС документацию. Это позволит вам получить компенсацию финансов, затраченных на приобретение средства передвижения.
+        </p>
+
+        <div class="tovar-description-list">
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Особенности
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">Регулировка спинки по углу наклона и высоте</li>
+              <li class="tovar-description-list__item">Регулировка сиденья по ширине и глубине</li>
+              <li class="tovar-description-list__item">Регулировка сиденья по углу наклона и высоте</li>
+              <li class="tovar-description-list__item">Регулировка подножки по высоте, откидные</li>
+              <li class="tovar-description-list__item">Регулировка подлокотников по высоте 24-35 см</li>
+              <li class="tovar-description-list__item">Скорость: 6 км/ч, 10 км/ч</li>
+              <li class="tovar-description-list__item">Запас хода: 25 км, 30 км</li>
+              <li class="tovar-description-list__item">Тип привода: задний</li>
+              <li class="tovar-description-list__item">Емкость аккумулятора: 2*43 А.ч, 2*50 А.ч</li>
+              <li class="tovar-description-list__item">Высота препятствий: 5 см</li>
+              <li class="tovar-description-list__item">Цвет рамы: черный, серебристый</li>
+              <li class="tovar-description-list__item">Цвет обивки: черный</li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Базовая комплектация
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">Комплектация STANDARD
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">- Рама</li>
+                  <li class="tovar-description-sublist__item">- Колеса задние пневматические, серые 356мм</li>
+                  <li class="tovar-description-sublist__item">- Колеса передние пневматические, серые 260 мм</li>
+                  <li class="tovar-description-sublist__item">- Ручка-толкатель</li>
+                  <li class="tovar-description-sublist__item">- Подлокотники с регулировкой высоты и глубины</li>
+                  <li class="tovar-description-sublist__item">- Подножки съемные, откидные с регулировкой угла наклона</li>
+                  <li class="tovar-description-sublist__item">- Пульт управления с регулировкой длины</li>
+                  <li class="tovar-description-sublist__item">- Светодиоды</li>
+                  <li class="tovar-description-sublist__item">- Аккумулятор 2*50 А.ч</li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">Комплектация MEDIUM
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">- Рама</li>
+                  <li class="tovar-description-sublist__item">- Колеса задние пневматические, серые 356мм с брызговиками</li>
+                  <li class="tovar-description-sublist__item">- Колеса передние пневматические, серые 260 мм</li>
+                  <li class="tovar-description-sublist__item">- Спинка с ремнями натяжения</li>
+                  <li class="tovar-description-sublist__item">- Ручка-толкатель</li>
+                  <li class="tovar-description-sublist__item">- Подлокотники с регулировкой высоты и глубины</li>
+                  <li class="tovar-description-sublist__item">- Подножки съемные, откидные с регулировкой угла наклона</li>
+                  <li class="tovar-description-sublist__item">- Пульт управления с регулировкой длины и высоты</li>
+                  <li class="tovar-description-sublist__item">- Светодиоды</li>
+                  <li class="tovar-description-sublist__item">- Тазовый ремень</li>
+                  <li class="tovar-description-sublist__item">- Багажник</li>
+                  <li class="tovar-description-sublist__item">- Аккумулятор 2*50 А.ч</li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">Комплектация PREMIUM
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">- Рама</li>
+                  <li class="tovar-description-sublist__item">- Колеса задние пневматические, черные 356мм с брызговиками с защитой от проколов</li>
+                  <li class="tovar-description-sublist__item">- Колеса передние пневматические, черные 260 мм с брызговиками с защитой от проклов</li>
+                  <li class="tovar-description-sublist__item">- Функция Lift на 300 мм</li>
+                  <li class="tovar-description-sublist__item">- Сиденье ErgoSeat</li>
+                  <li class="tovar-description-sublist__item">- Подголовник</li>
+                  <li class="tovar-description-sublist__item">- Боковые поддержки</li>
+                  <li class="tovar-description-sublist__item">- Пульт управления R-Net с дисплеем с регулировкой длины и высоты</li>
+                  <li class="tovar-description-sublist__item">- Светодиоды</li>
+                  <li class="tovar-description-sublist__item">- Тазовый ремень</li>
+                  <li class="tovar-description-sublist__item">- Багажник</li>
+                  <li class="tovar-description-sublist__item">- Аккумулятор 2*73 А.ч</li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">Комплектация DEMO
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">- Рама</li>
+                  <li class="tovar-description-sublist__item">- Колеса задние пневматические, серые 356мм</li>
+                  <li class="tovar-description-sublist__item">- Колеса передние пневматические, серые 260 мм</li>
+                  <li class="tovar-description-sublist__item">- Спинка с ремнями натяжения</li>
+                  <li class="tovar-description-sublist__item">- Подголовник</li>
+                  <li class="tovar-description-sublist__item">- Боковые поддержки</li>
+                  <li class="tovar-description-sublist__item">- Подлокотники с регулировкой высоты</li>
+                  <li class="tovar-description-sublist__item">- Подножки съемные, откидные с регулировкой угла наклона</li>
+                  <li class="tovar-description-sublist__item">- 4-точечный тазовый ремень</li>
+                  <li class="tovar-description-sublist__item">- Абдуктор</li>
+                  <li class="tovar-description-sublist__item">- Пульт управления с регулировкой длины</li>
+                  <li class="tovar-description-sublist__item">- Светодиоды</li>
+                  <li class="tovar-description-sublist__item">- Аккумулятор 2*50 А.ч</li>
+                </ul>
+              </li>
+              <li class="tovar-description-list__item">Комплектация TENDER
+                <ul class="tovar-description-sublist">
+                  <li class="tovar-description-sublist__item">- Рама</li>
+                  <li class="tovar-description-sublist__item">- Колеса задние пневматические, серые 356мм</li>
+                  <li class="tovar-description-sublist__item">- Колеса передние пневматические, серые 260 мм</li>
+                  <li class="tovar-description-sublist__item">- Спинка с ремнями натяжения</li>
+                  <li class="tovar-description-sublist__item">- Подлокотники с регулировкой высоты</li>
+                  <li class="tovar-description-sublist__item">- Подголовник</li>
+                  <li class="tovar-description-sublist__item">- Боковые поддержки</li>
+                  <li class="tovar-description-sublist__item">- Абдуктор</li>
+                  <li class="tovar-description-sublist__item">- Пульт управления R-Net с дисплеем с регулировкой длины и высоты и отведением в сторону</li>
+                  <li class="tovar-description-sublist__item">- Светодиоды</li>
+                  <li class="tovar-description-sublist__item">- 4-точечный тазовый ремень</li>
+                  <li class="tovar-description-sublist__item">- Багажник</li>
+                  <li class="tovar-description-sublist__item">- Аккумулятор 2*55 А.ч</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tovar-description">
+            <h3 class="tovar-description__list-title">
+              Дополнительные опции
+            </h3>
+
+            <ul class="tovar-description__list">
+              <li class="tovar-description-list__item">Усиленная подвеска для пользователей весом 120 - 160 кг</li>
+              <li class="tovar-description-list__item">Электрорегулировка угла наклона сиденья от -2 ° до 26 °, от 0 ° до 50 °</li>
+              <li class="tovar-description-list__item">Электрорегулировка угла наклона спинки от -10 ° до 50 °</li>
+              <li class="tovar-description-list__item">Подлокотники регулируемые по высоте, ширине и углу наклона</li>
+              <li class="tovar-description-list__item">Подножка электрическая</li>
+              <li class="tovar-description-list__item">Большой выбор типов сиденья и спинки для лучшего комфорта ERGOSTAR, RECARO</li>
+              <li class="tovar-description-list__item">Вешалка для сумки</li>
+              <li class="tovar-description-list__item">Держатель для костылей или трости</li>
+              <li class="tovar-description-list__item">Ремень безопасности с замком-пряжкой</li>
+              <li class="tovar-description-list__item">Счетчик пройденных километров</li>
+              <li class="tovar-description-list__item">Многочисленные дополнительные виды управления</li>
+              <li class="tovar-description-list__item">Зеркало заднего вида</li>
+              <li class="tovar-description-list__item">Столик лечебный сдвигаемый в сторону</li>
+              <li class="tovar-description-list__item">Емкость аккумулятора: 2*66 А.ч / 2*80 А.ч</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="table-box">
+          <h2 class="table-title">
+            Технические характеристики
+          </h2>
+
+          <table class="table table-center">
+            <tdead>
+            <tr>
+              <td class="table-category">Комплектация</td>
+           <td class="table-category" >Standart</td>
+           <td class="table-category" >Premium</td>
+           <td class="table-category" >Medium</td>
+           <td class="table-category" >Demo</td>
+           <td class="table-category" >Tender</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td>Тип колёс:</th>
+          <td colspan="5" >Пневматические</td>
+        </tr>
+        <tr>
+          <td>Высота преодоления препятсвий:</th>
+          <td colspan="5" >7</td>
+        </tr><tr><td>Тип аккумулятора:</th><td colspan="5" >Гелевые</td></tr><tr><td>Тип привода:</th><td colspan="5" >механический, электрический</td></tr><tr><td>Максимальная скорость (км/ч):</th><td colspan="3" >10</td><td colspan="1" >6</td><td colspan="1" >10</td></tr><tr><td>Запас хода (км):</th><td colspan="5" >35 - 40</td></tr><tr><td>Глубина сиденья:</th><td colspan="1" >40 - 53</td><td colspan="1" >42 - 53</td><td colspan="3" >40 - 53</td></tr><tr><td>Ширина сиденья:</th><td colspan="1" >43 - 55</td><td colspan="1" >38 - 50</td><td colspan="3" >43 - 55</td></tr><tr><td>Высота спинки:</th><td colspan="1" >45 - 50</td><td colspan="1" >53 - 57</td><td colspan="3" >45 - 50</td></tr><tr><td>Высота сиденья:</th><td colspan="5" >46 - 53</td></tr><tr><td>Высота подножки:</th><td colspan="5" >28 - 43</td></tr><tr><td>Угол подъема:</th><td colspan="5" >15</td></tr><tr><td>Функционал :</th><td colspan="1" >Механическая регулировка угла наклона сиденья, Механическая регулировка угла наклона спинки, Механическая регулировка угла  в коленном суставе, Освещение</td><td colspan="1" >Механическая регулировка угла  в коленном суставе, Электрическая регулировка угла наклона сиденья, Электрическая регулировка угла наклона спинки, Боковые поддержки, Подголовник, Функция Lift, Освещение</td><td colspan="1" >Механическая регулировка угла наклона спинки, Механическая регулировка угла  в коленном суставе, Электрическая регулировка угла наклона сиденья</td><td colspan="1" >Механическая регулировка угла наклона сиденья, Механическая регулировка угла наклона спинки, Механическая регулировка угла  в коленном суставе, Боковые поддержки, Подголовник, Абдуктор, Освещение</td><td colspan="1" >Электрическая регулировка угла наклона сиденья, Электрическая регулировка угла наклона спинки, Электрическая регулировка угла  в коленном суставе, Боковые поддержки, Подголовник, Абдуктор, Освещение</td></tr><tr><td>Вес:</th><td colspan="5" >100</td></tr><tr><td>Максимальный вес пользователя:</th><td colspan="2" >160</td><td colspan="1" >120</td><td colspan="2" >160</td></tr><tr><td>Общая ширина:</th><td colspan="5" >63</td></tr><tr><td>Общая длина:</th><td colspan="5" >83 - 113</td></tr></tbody></table>
+        </div>
+
+        <section class="collecting-contacts">
+          <div class="container collecting-contacts__container">
+            <h1 class="collecting-contacts__title">
+              Обеспечим техническими средствами реабилитации по электронным сертификатам
+            </h1>
+      
+            <h2 class="collecting-contacts__form-title">остались вопросы ?</h2>
+            <p class="collecting-contacts__form-subtitle">
+              Оставьте контакты и мы скоро свяжемся с вами
+            </p>
+      
+            <form class="collecting-contacts__form" id="form-question">
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-name" type="text" placeholder="Ваше имя">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-tel" type="text" placeholder="Ваш телефон">
+                <p class="form-error form-error-black"></p>
+              </label>
+              <label class="form-question__label">
+                <input class="collecting-contacts__input" id="form-question-email" type="text" placeholder="Ваш email">
+                <p class="form-error form-error-black"></p>
+              </label>
+      
+              <button class="collecting-contacts__submit">оставить заявку</button>
+
+              <p class="form-question-response"></p>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="logo">
+        <img src="../../../../images/logo.png" alt="logo" class="logo__img">
+      </div>
+      
+
+      <div class="footer-adress">
+        <p class="footer-adress__text">ИП Пахомов А.Н. ИНН 525906608202</p>
+        <p class="footer-adress__text">г. Нижний Новгород, ул. пос. Черепичный, 14А, оф. 1</p>
+      </div>
+
+      <div class="contacts-links">
+        <a class="contacts-links__item" href="mailto:9630293949@mail.ru">9630293949@mail.ru</a>
+        <a class="contacts-links__item" href="tel:+79630293949">+7 (963) 029-39-49</a>
+        <a class="contacts-links__item" href="tel:+78005054151">+7 (800) 505-41-51</a>
+      </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <section class="footer-pay">
+    <div class="container">
+      <img class="footer-pay__img" src="../../../../images/footer-pay.png" alt="pay">
+    </div>
+  </section>
+
+  <script src="../../../../jquery/jquery-3.6.3.min.js"></script>
+  <script src="../../../../jquery/jquery.maskedinput.min.js"></script>
+  <script src="../../../../scripts/menu.js"></script>
+  <script src="../../../../scripts/slider.js"></script>
+  <script src="../../../../scripts/productFormOrder.js"></script>
+  <script src="../../../../scripts/productFormQuestion.js"></script>
+  <script>
+   
+  </script>
+</body>
+</html>
