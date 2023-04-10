@@ -496,6 +496,31 @@ html, body {
   text-align: center;
   font-weight: 100;
   font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.our-products-list-item {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.our-products-list-item__img {
+  display: block;
+  width: 40%;
+  margin-right: 100px;
+}
+
+.our-products-list-item__title {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.our-products-list-item__description {
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 /* header */
@@ -842,6 +867,8 @@ box-shadow: 0px 0px 17px 10px rgba(255, 27, 0, 0.2);
 .mobile-adress {
   display: none;
 }
+
+
 
 
 @media(max-width: 1240px) {
