@@ -11,6 +11,34 @@
 </head>
 <body>
 
+  <section class="modal-order">
+    <div class="modal-order__container">
+      <form class="collecting-contacts__form modal-order__form" id="modal-order-form">
+        <div class="close modal-order__close" id="catalog">
+          <span></span>
+          <span></span>
+        </div>
+        <h3 class="modal-order__title">оставить заявку</h3>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-name" name="name" type="text" placeholder="Ваше имя">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-tel" name="tel" type="text" placeholder="Ваш телефон">
+          <p class="form-error"></p>
+        </label>
+        <label class="modal-order__label">
+          <input class="collecting-contacts__input modal-order__input" id="order-form-email" name="email" type="text" placeholder="Ваш email">
+          <p class="form-error"></p>
+        </label>
+
+        <button class="collecting-contacts__submit">отправить</button>
+
+        <p class="modal-order-response"></p>
+      </form>
+    </div>
+  </section>
+
   <section class="catalog">
     <div class="close" id="catalog">
       <span></span>
@@ -470,6 +498,7 @@
   <script src="jquery/jquery-3.6.3.min.js"></script>
   <script src="jquery/jquery.maskedinput.min.js"></script>
   <script src="scripts/productFormQuestionHomePage.js"></script>
+  <script src="scripts/productFormOrderHomePage.js"></script>
 
 </body>
 </html>
