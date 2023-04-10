@@ -445,6 +445,59 @@ html, body {
   width: 1200px;
 }
 
+.section-home-page-trigger {
+  background-image: url('../images/home-page-trigger.jpg');
+  background-size: cover;
+}
+
+.home-page-trigger {
+  height: 800px;
+  padding: 100px 0;
+}
+
+.home-page-trigger__title-company {
+  color: white;
+  text-align: center;
+  margin-bottom: 150px;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.home-page-trigger__title {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 90px;
+}
+
+.home-page-trigger__button {
+  padding: 20px 30px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  color: #0a0a0a;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  background-color: #777777;
+  color: white;
+}
+
+.home-page-trigger__button:hover {
+  background-color: red;
+}
+
+.section-our-products {
+  padding: 50px 0;
+}
+
+.our-products-title {
+  text-align: center;
+  font-weight: 100;
+  font-size: 40px;
+}
+
 /* header */
 
 .header {
@@ -822,6 +875,21 @@ box-shadow: 0px 0px 17px 10px rgba(255, 27, 0, 0.2);
     margin-bottom: 60px;
     font-size: 25px;
   }
+
+  .home-page-trigger {
+    height: 600px;
+  }
+
+  .home-page-trigger__title-company {
+    margin-bottom: 100px;
+  }
+
+  .home-page-trigger__title {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 @media(max-width: 780px) {
@@ -988,6 +1056,20 @@ box-shadow: 0px 0px 17px 10px rgba(255, 27, 0, 0.2);
   .footer-pay__img {
     width: 100%;
   }
+
+  .home-page-trigger {
+    height: 500px;
+  }
+
+  .home-page-trigger__title-company {
+    font-size: 30px;
+    margin-bottom: 70px;
+  }
+
+  .home-page-trigger__title {
+    font-size: 30px;
+  }
+
 }
 
 @media(max-width: 550px) {
@@ -1057,5 +1139,19 @@ box-shadow: 0px 0px 17px 10px rgba(255, 27, 0, 0.2);
 
   .mobile-menu__close {
     right: 10px;
+  }
+
+
+  .home-page-trigger {
+    padding: 50px 0;
+    height: 400px;
+  }
+
+  .home-page-trigger__title-company {
+    font-size: 25px;
+  }
+
+  .home-page-trigger__title {
+    font-size: 20px;
   }
 }
