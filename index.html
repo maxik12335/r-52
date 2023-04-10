@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/tovar.css">
   <title>Главная</title>
 </head>
 <body>
@@ -417,12 +418,23 @@
         Оставьте контакты и мы скоро свяжемся с вами
       </p>
 
-      <form class="collecting-contacts__form">
-        <input class="collecting-contacts__input" type="text" placeholder="Ваше имя">
-        <input class="collecting-contacts__input" type="text" placeholder="Ваш телефон">
-        <input class="collecting-contacts__input" type="text" placeholder="Ваш email">
+      <form class="collecting-contacts__form" id="form-question">
+        <label class="form-question__label">
+          <input class="collecting-contacts__input" id="form-question-name" type="text" placeholder="Ваше имя">
+          <p class="form-error form-error-black"></p>
+        </label>
+        <label class="form-question__label">
+          <input class="collecting-contacts__input" id="form-question-tel" inputmode="tel" type="text" placeholder="Ваш телефон">
+          <p class="form-error form-error-black"></p>
+        </label>
+        <label class="form-question__label">
+          <input class="collecting-contacts__input" id="form-question-email" inputmode="email" type="text" placeholder="Ваш email">
+          <p class="form-error form-error-black"></p>
+        </label>
 
         <button class="collecting-contacts__submit">оставить заявку</button>
+
+        <p class="form-question-response"></p>
       </form>
     </div>
   </section>
@@ -455,5 +467,9 @@
   </section>
 
   <script src="scripts/menu.js"></script>
+  <script src="jquery/jquery-3.6.3.min.js"></script>
+  <script src="jquery/jquery.maskedinput.min.js"></script>
+  <script src="scripts/productFormQuestionHomePage.js"></script>
+
 </body>
 </html>
