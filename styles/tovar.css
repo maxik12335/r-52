@@ -436,6 +436,28 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
 }
 
+.go-to-catalog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 20px;
+  /* color: blue; */
+}
+
+.go-to-catalog > img {
+  display: block;
+  width: 30px;
+}
+
+.go-to-catalog > span {
+  border-bottom: 1px solid;
+}
+
+.go-to-catalog:hover span {
+  color: #ef4b4b;
+}
+
 @media(max-width: 1240px) {
   .dop-tovar-description__list-item {
     width: 27.4%;
@@ -494,6 +516,12 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
   .dop-tovar-color {
     height: 140px;
   }
+
+  .go-to-catalog {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
 }
 
 @media(max-width: 450px) {
