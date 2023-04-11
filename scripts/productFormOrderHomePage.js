@@ -1,4 +1,5 @@
-const modalOrder = document.querySelector(".modal-order")
+document.addEventListener("DOMContentLoaded", () => {
+  const modalOrder = document.querySelector(".modal-order")
 const modalOrderClose = document.querySelector(".modal-order__close")
 const modalOrderOpenButton = document.querySelector(".home-page-trigger__button")
 
@@ -86,4 +87,5 @@ orderForm.addEventListener("submit", async (event) => {
       modalOrder.classList.remove("modal-order-show")
     }, 3000)
   }
+})
 })

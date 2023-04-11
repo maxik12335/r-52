@@ -1,4 +1,5 @@
-// form send
+document.addEventListener("DOMContentLoaded", () => {
+  // form send
 
 const questionForm = document.querySelector("#form-question")
 
@@ -74,4 +75,5 @@ questionForm.addEventListener("submit", async (event) => {
       serverMessage.textContent=""
     }, 3000)
   }
+})
 })

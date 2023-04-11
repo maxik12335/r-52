@@ -66,6 +66,7 @@
  html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
 }
 
 /* Sections
@@ -489,19 +490,23 @@ html, body {
 }
 
 .section-our-products {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .our-products-title {
   text-align: center;
   font-weight: 100;
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .our-products-list-item {
   display: flex;
   margin-bottom: 50px;
+}
+
+.our-products-list-item:last-child {
+  margin-bottom: 0;
 }
 
 .our-products-list-item__img {
@@ -546,6 +551,7 @@ html, body {
 
 .nav-list__link {
   padding: 5px 0;
+  cursor: pointer;
 }
 
 .nav-list__link:hover {
@@ -868,8 +874,73 @@ box-shadow: 0px 0px 17px 10px rgba(255, 27, 0, 0.2);
   display: none;
 }
 
+.home-page__container {
+  position: relative;
+}
 
+.modal-list-item {  
+  display: none;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+}
 
+.modal-list-item__title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.modal-list-item__description {
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 1.1px;
+  margin-bottom: 50px;
+}
+
+.modal-list-item__button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 50px;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+  cursor: pointer;
+}
+
+.modal-list-item__button:hover {
+  box-shadow: 0px 0px 8px 3px rgb(0 0 0 / 20%);
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partners-list__item {
+  width: 30%;
+  box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+  transition: 0.2s;
+}
+
+.partners-list__item:hover {
+  box-shadow: 0px 0px 8px 3px rgb(0 0 0 / 20%);
+}
+
+.partners-list__link {
+  display: block;
+  width: 100%;
+}
+
+.partners-list__img {
+  display: block;
+  width: inherit;
+  height: 320px;
+}
+
+/* .partners-list__title {
+  text-align: center;
+} */
 
 @media(max-width: 1240px) {
   .container {
@@ -940,6 +1011,10 @@ box-shadow: 0px 0px 17px 10px rgba(255, 27, 0, 0.2);
   .our-products-list-item__title,
   .our-products-list-item__description {
     color: white;
+  }
+
+  .partners-list__img {
+    height: 200px;
   }
 }
 
@@ -1133,6 +1208,27 @@ box-shadow: 0px 0px 17px 10px rgba(255, 27, 0, 0.2);
   .our-products-list-item__img {
     width: 250%;
     left: -220px;
+  }
+
+  .section-our-products {
+    padding: 50px 0;
+  }
+
+  .our-products-title {
+    margin-bottom: 50px;
+  }
+
+  .partners-list {
+    flex-direction: column;
+  }
+
+  .partners-list__item {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .partners-list__item:last-child {
+    margin-bottom: 0;
   }
 
 }

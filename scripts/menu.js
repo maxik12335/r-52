@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 // Вынести в отдельный файл !
 // Функция по избавлению от лишнего текста в заголовках
 const productTitle = document.querySelectorAll('.product-text')
@@ -59,4 +60,5 @@ mobileMenuOpen.addEventListener("click", () => {
   header.style.opacity = 1
   header.style.zIndex = 1
   document.querySelector("body").style.overflow = "hidden"
+})
 })

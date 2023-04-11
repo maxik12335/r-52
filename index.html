@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/tovar.css">
+  <link rel="stylesheet" href="styles/contacts.css">
   <title>Главная</title>
 </head>
 <body>
@@ -326,7 +327,7 @@
             <a class="nav-list__link" href="#">Главная</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#" data-catalog>Каталог</a>
+            <a class="nav-list__link" data-catalog>Каталог</a>
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href="pages/offline-page.html">оффлайн магазин</a>
@@ -417,23 +418,56 @@
   </section>
 
   <div class="home-page">
-    <div class="container">
+    <div class="container home-page__container">
       <ul class="home-page-list">
         <li class="home-page-list__item">
-          трейд ин
+          <a>трейд ин</a>
         </li>
         <li class="home-page-list__item">
-          наше производство
+          <a>наше производство</a>
         </li>
         <li class="home-page-list__item">
-          потранажная служба
+          <a>патронажная служба</a>
         </li>
         <li class="home-page-list__item">
           <a href="https://www.met.ru/" class="home-page__link" target="_blank">продукция МЕТ</a>
         </li>
       </ul>
+
+      <div class="modal-list-item" id="about">
+        <h3 class="modal-list-item__title"></h3>
+        <p class="modal-list-item__description"></p>
+        <button class="modal-list-item__button">подробнее</button>
+      </div>
     </div>
   </div>
+
+  <section class="section-partners">
+    <div class="container">
+      <h2 class="our-products-title">Партнёры</h2>
+
+      <ul class="partners-list">
+        <li class="partners-list__item">
+          <a href="https://www.met.ru/" target="_blank" class="partners-list__link">
+            <img src="images/met.jpg" class="partners-list__img" alt="">
+            <!-- <h3 class="partners-list__title">MET</h3> -->
+          </a>
+        </li>
+        <li class="partners-list__item">
+          <a href="https://armed.ru/" target="_blank" class="partners-list__link">
+            <img src="images/armed.jpg" class="partners-list__img" alt="">
+            <!-- <h3 class="partners-list__title">АРМЕД</h3> -->
+          </a>
+        </li>
+        <li class="partners-list__item">
+          <a href="https://caterwil.com/" target="_blank" class="partners-list__link">
+            <img src="images/caterwil.jpg" class="partners-list__img" alt="">
+            <!-- <h3 class="partners-list__title">CATERWIL</h3> -->
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
   <section class="collecting-contacts">
     <div class="container collecting-contacts__container">
@@ -464,6 +498,28 @@
 
         <p class="form-question-response"></p>
       </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <h2 class="our-products-title">Контакты</h2>
+
+      <div class="contacts-box">
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa93f3bc57cec1bc4692e9e213e4eff8ff492f9977918a50b9018fa9e38f514c3&amp;source=constructor" frameborder="0"></iframe>
+    
+        <div class="contacts-description">
+          <div class="contacts-description__box">
+            <p class="contacts-description__text">г. Нижний Новгород пос. Черепичный, 14А</p>
+            <p class="contacts-description__text">г. Нижний Новгород Родионова, 165 корп. 13</p>
+          </div>
+          <div class="contacts-description__box">
+            <p class="contacts-description__text">email: <a class="contacts-description__link" href="mailto:9630293949@mail.ru">9630293949@mail.ru</a></p>
+            <p class="contacts-description__text">телефон: <a class="contacts-description__link" href="tel:+79630293949">+7 (963) 029-39-49</a></p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -499,6 +555,7 @@
   <script src="jquery/jquery.maskedinput.min.js"></script>
   <script src="scripts/productFormQuestionHomePage.js"></script>
   <script src="scripts/productFormOrderHomePage.js"></script>
+  <script src="scripts/modal-home-page-item.js"></script>
 
 </body>
 </html>
