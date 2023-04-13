@@ -9,7 +9,7 @@ const modals = document.querySelectorAll(".our-products-catalog")
 const modalListItems = document.querySelectorAll('.our-products-catalog__list-item')
 const ourProductsItem = document.querySelectorAll(".our-products-list-item")
 const sublists = document.querySelectorAll('.our-products-catalog__sublist')
-
+const backgroundOutsideModal = document.querySelector(".background-outside-modal")
 
 // set listeneres
 
@@ -19,6 +19,9 @@ const sublists = document.querySelectorAll('.our-products-catalog__sublist')
       modals[index].style.display = 'none'
       modals[index].style.zIndex = '-1'
       document.body.style.overflowY = ""
+
+      // remove background outside modal
+      backgroundOutsideModal.style.display = "none"
     })
   })
 
@@ -34,6 +37,7 @@ const sublists = document.querySelectorAll('.our-products-catalog__sublist')
         modal.style.display = '-1'
       })
 
+      // clear all sublists
       sublists.forEach(item => {
         item.style.display = "none"
       })
@@ -44,17 +48,26 @@ const sublists = document.querySelectorAll('.our-products-catalog__sublist')
       modals[index].style.zIndex = '1'
 
       // scroll to product
-      if(window.innerWidth > 780) {
-        ourProductsItem[index].scrollIntoView({
-          block: "center", 
-          behavior: "smooth"
-        })
-      } else {
-        ourProductsItem[index].scrollIntoView({
-          block: "start", 
-          behavior: "smooth"
-        })
-      }
+      ourProductsItem[index].scrollIntoView({
+        block: "center", 
+        behavior: "smooth"
+      })
+        // надо проверить на мобилках
+          // if(window.innerWidth > 780) {
+          //   ourProductsItem[index].scrollIntoView({
+          //     block: "center", 
+          //     behavior: "smooth"
+          //   })
+          // } else {
+          //   ourProductsItem[index].scrollIntoView({
+          //     block: "start", 
+          //     behavior: "smooth"
+          //   })
+          // }
+
+      // show background outside modal
+      backgroundOutsideModal.style.display = "block"
+
     })
 
   })
