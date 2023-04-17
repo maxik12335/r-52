@@ -522,17 +522,18 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
   }
 
+  .modal-order__close {
+    right: -30px;
+  }
+
+  .modal-order__close span {
+    background-color: white;
+  }
+
 }
 
 @media(max-width: 450px) {
-  /* .slider {
-    padding: 0 30px;
-  }
 
-  .slider-buttons button {
-    width: 30px;
-    height: 30px;
-  } */
   .slide-box {
     width: 200px;
   }
@@ -574,5 +575,10 @@ box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
     margin: 0;
     margin-bottom: 30px;
+  }
+
+  .modal-order__close {
+    right: -10px;
+    top: -10px;
   }
 }
